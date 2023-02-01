@@ -1,12 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="../Assets/css/Main.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <!-- Navbar Main  -->
+    <nav class="navbar p-3 bg-light">
+      <div class="container navbar_container">
+        <div class="navbar_container_logoBox">
+          <div>
+            <a href="#">
+              <img src="../Assets/Images/logo/logo.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="navbar_container_menuBox position-relative">
+          <ul class="d-flex menuBox">
+            <li class="menuBox_link p-3 d-inline-block mx-2">
+              <a href="#"> About us</a>
+            </li>
+            <li class="menuBox_link p-3 d-inline-block mx-2">
+              <a href="#"> Services </a>
+            </li>
+            <li class="menuBox_link p-3 d-inline-block mx-2">
+              <a href="#"> Shop </a>
+            </li>
+            <li class="menuBox_link p-3 d-inline-block mx-2">
+              <a href="#"> Our specialists</a>
+            </li>
+            <li class="menuBox_link p-3 d-inline-block mx-2">
+              <a href="#"> Testimonials </a>
+            </li>
+            <li class="menuBox_link p-3 d-inline-block mx-2">
+              <a href="#"> Blog </a>
+            </li>
+            <li class="menuBox_link p-3 d-inline-block mx-2">
+              <a href="#"> Contact </a>
+            </li>
+            <li class="menuBox_link d-inline-block searchBox bg-light">
+              <input class="bg-light" type="text" placeholder="Search..." />
+              <i id="search-icon" class="las la-search"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar_container_widgetBox d-flex align-items-center">
+          <div
+            class="navbar_container_widgetBox_cart mx-2 position-relative p-2"
+          >
+            <i class="las la-shopping-cart"></i>
+            <div class="cartMini position-absolute">
+              <ul class="cartMini_list p-0">
+                <li
+                  class="cartMini_list_item mt-2 position-relative align-items-center me-0 ms-0"
+                >
+                  <i
+                    class="las la-times p-1 cartMini_list_item_close position-absolute top-0 end-0"
+                  ></i>
+
+                  <div class="cartMini_list_item_image mx-2">
+                    <img src="../Assets/Uploads/Products/prd-sm-1.jpg" alt="" />
+                  </div>
+
+                  <div class="me-2">
+                    <span class="cartMini_list_item_title mb-0 pe-4">
+                      <a href="">Active Wow Teeth tasty Charcoal Powder</a>
+                    </span>
+                    <p class="cartMini_list_item_price mb-0 mt-2">$38</p>
+                  </div>
+                </li>
+                <li
+                  class="cartMini_list_item mt-2 position-relative align-items-center me-0 ms-0"
+                >
+                  <i
+                    class="las la-times p-1 cartMini_list_item_close position-absolute top-0 end-0"
+                  ></i>
+
+                  <div class="cartMini_list_item_image mx-2">
+                    <img src="../Assets/Images/logo/logo.png" alt="" />
+                  </div>
+
+                  <div class="me-2">
+                    <span class="cartMini_list_item_title mb-0 pe-4">
+                      <a href="">Active Wow Teeth tasty Charcoal Powder</a>
+                    </span>
+                    <p class="cartMini_list_item_price mb-0 mt-2">$38</p>
+                  </div>
+                </li>
+                <li
+                  class="cartMini_list_item mt-2 position-relative align-items-center me-0 ms-0"
+                >
+                  <i
+                    class="las la-times p-1 cartMini_list_item_close position-absolute top-0 end-0"
+                  ></i>
+                      <div class="cartMini_list_item_image mx-2">
+                    <img src="../Assets/Uploads/Products/prd-sm-2.jpg" alt="" />
+                  </div>
+
+                  <div class="me-2">
+                    <span class="cartMini_list_item_title mb-0 pe-4">
+                      <a href="">Active Wow Teeth tasty Charcoal Powder</a>
+                    </span>
+                    <p class="cartMini_list_item_price mb-0 mt-2">$38.25</p>
+                  </div>
+                </li>
+              </ul>
+
+              <hr />
+              <div class="cartMini_footer">
+                <div class="d-flex justify-content-between fs-4 mb-2">
+                  <span>Total:</span> <span>$78.85</span>
+                </div>
+                <button class="checkoutBtn  rounded-pill">CheckOut</button>
+              </div>
+            </div>
+          </div>
+          <div class="navbar_container_widgetBox_profile p-3">
+            <a href=""> <i class="las la-user-circle"></i></a>
+
+            <button class="btn btn-outline-dark d-none rounded-1">
+              Sign In
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--Navbar Scroll  -->
+    <nav class="navbar navbarScroll p-3 bg-light d-none">
+        <div class="container navbar_container">
+          <div class="navbar_container_logoBox">
+            <div>
+              <a href="#">
+                <img src="../Assets/Images/logo/logo.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="navbar_container_menuBox position-relative">
+            <ul class="d-flex menuBox">
+              <li class="menuBox_link p-3 d-inline-block mx-2">
+                <a href="#"> About us</a>
+              </li>
+              <li class="menuBox_link p-3 d-inline-block mx-2">
+                <a href="#"> Services </a>
+              </li>
+              <li class="menuBox_link p-3 d-inline-block mx-2">
+                <a href="#"> Shop </a>
+              </li>
+              <li class="menuBox_link p-3 d-inline-block mx-2">
+                <a href="#"> Our specialists</a>
+              </li>
+              <li class="menuBox_link p-3 d-inline-block mx-2">
+                <a href="#"> Testimonials </a>
+              </li>
+              <li class="menuBox_link p-3 d-inline-block mx-2">
+                <a href="#"> Blog </a>
+              </li>
+              <li class="menuBox_link p-3 d-inline-block mx-2">
+                <a href="#"> Contact </a>
+              </li>
+              <li class="menuBox_link d-inline-block searchBox bg-light">
+                <input class="bg-light" type="text" placeholder="Search..." />
+                <i id="search-icon" class="las la-search"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar_container_widgetBox d-flex align-items-center">
+            <div
+              class="navbar_container_widgetBox_cart mx-2 position-relative p-2"
+            >
+              <i class="las la-shopping-cart"></i>
+              <div class="cartMini position-absolute">
+                <ul class="cartMini_list p-0">
+                  <li
+                    class="cartMini_list_item mt-2 position-relative align-items-center me-0 ms-0"
+                  >
+                    <i
+                      class="las la-times p-1 cartMini_list_item_close position-absolute top-0 end-0"
+                    ></i>
+  
+                    <div class="cartMini_list_item_image mx-2">
+                      <img src="../Assets/Uploads/Products/prd-sm-1.jpg" alt="" />
+                    </div>
+  
+                    <div class="me-2">
+                      <span class="cartMini_list_item_title mb-0 pe-4">
+                        <a href="">Active Wow Teeth tasty Charcoal Powder</a>
+                      </span>
+                      <p class="cartMini_list_item_price mb-0 mt-2">$38</p>
+                    </div>
+                  </li>
+                  <li
+                    class="cartMini_list_item mt-2 position-relative align-items-center me-0 ms-0"
+                  >
+                    <i
+                      class="las la-times p-1 cartMini_list_item_close position-absolute top-0 end-0"
+                    ></i>
+  
+                    <div class="cartMini_list_item_image mx-2">
+                      <img src="../Assets/Images/logo/logo.png" alt="" />
+                    </div>
+  
+                    <div class="me-2">
+                      <span class="cartMini_list_item_title mb-0 pe-4">
+                        <a href="">Active Wow Teeth tasty Charcoal Powder</a>
+                      </span>
+                      <p class="cartMini_list_item_price mb-0 mt-2">$38</p>
+                    </div>
+                  </li>
+                  <li
+                    class="cartMini_list_item mt-2 position-relative align-items-center me-0 ms-0"
+                  >
+                    <i
+                      class="las la-times p-1 cartMini_list_item_close position-absolute top-0 end-0"
+                    ></i>
+                        <div class="cartMini_list_item_image mx-2">
+                      <img src="../Assets/Uploads/Products/prd-sm-2.jpg" alt="" />
+                    </div>
+  
+                    <div class="me-2">
+                      <span class="cartMini_list_item_title mb-0 pe-4">
+                        <a href="">Active Wow Teeth tasty Charcoal Powder</a>
+                      </span>
+                      <p class="cartMini_list_item_price mb-0 mt-2">$38.25</p>
+                    </div>
+                  </li>
+                </ul>
+  
+                <hr />
+                <div class="cartMini_footer">
+                  <div class="d-flex justify-content-between fs-4 mb-2">
+                    <span>Total:</span> <span>$78.85</span>
+                  </div>
+                  <button class="checkoutBtn  rounded-pill">CheckOut</button>
+                </div>
+              </div>
+            </div>
+            <div class="navbar_container_widgetBox_profile p-3">
+              <a href=""> <i class="las la-user-circle"></i></a>
+  
+              <button class="btn btn-outline-dark d-none rounded-1">
+                Sign In
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <script src="../Assets/Js/navbar.js"></script>
+  </body>
 </html>
