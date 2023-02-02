@@ -10933,6 +10933,43 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.aboutUs_info_button, .mainSlider_item_content .button-87 {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #197df0;
+  background-image: linear-gradient(45deg, #3368c6 0%, #4d9efb 51%, #3368c6 100%);
+  cursor: pointer;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.aboutUs_info_button:active, .mainSlider_item_content .button-87:active {
+  transform: scale(0.95);
+}
+.aboutUs_info_button:hover, .mainSlider_item_content .button-87:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
 .navbar {
   z-index: 9;
 }
@@ -11072,7 +11109,7 @@ textarea.form-control-lg {
 }
 .mainSlider_item .holder {
   width: 100%;
-  height: 80vh;
+  height: 88vh;
   background-color: red;
 }
 .mainSlider_item .holder img {
@@ -11099,35 +11136,7 @@ textarea.form-control-lg {
   letter-spacing: 0.03rem;
 }
 .mainSlider_item_content .button-87 {
-  margin: 10px;
   margin-top: 65px;
-  padding: 15px 30px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: white;
-  border-radius: 10px;
-  display: block;
-  border: 0px;
-  text-decoration: none;
-  font-weight: 700;
-  box-shadow: 0px 0px 14px -7px #197df0;
-  background-image: linear-gradient(45deg, #3368c6 0%, #4d9efb 51%, #3368c6 100%);
-  cursor: pointer;
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-.mainSlider_item_content .button-87:active {
-  transform: scale(0.95);
-}
-.mainSlider_item_content .button-87:hover {
-  background-position: right center;
-  color: #fff;
-  text-decoration: none;
 }
 .mainSlider .slick-dots {
   text-align: center;
@@ -11175,7 +11184,91 @@ textarea.form-control-lg {
     height: 25vh;
   }
 }
+.aboutUs_values {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.aboutUs_values_item {
+  padding: 40px 20px;
+  background-color: white;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+}
+.aboutUs_values_item .valueIcon {
+  font-size: 55px;
+  line-height: 55px;
+  color: #3368c6;
+}
+.aboutUs_values_item .valueName {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.aboutUs_values_item .valueName::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 33px;
+  height: 3px;
+  border-radius: 1px;
+  background-color: #3368c6;
+}
+.aboutUs_values_item:hover {
+  background-color: #3368c6;
+}
+.aboutUs_values_item:hover .valueIcon {
+  color: white;
+}
+.aboutUs_values_item:hover .valueName {
+  color: white;
+}
+.aboutUs_values_item:hover .valueName::before {
+  background-color: white;
+}
+.aboutUs_info {
+  margin-left: 20px;
+}
+.aboutUs_info_sectionName {
+  color: #3368c6;
+  font-size: 1.6rem;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+}
+.aboutUs_info_title {
+  font-size: 2.2em;
+  font-weight: 600;
+  line-height: 1.22em;
+  letter-spacing: 1px;
+  color: #444;
+  margin-bottom: 25px;
+}
+.aboutUs_info_title span {
+  color: #3368c6;
+}
+.aboutUs_info_desc {
+  color: #787878;
+}
+.aboutUs_info_desc ul {
+  padding-left: 10px;
+}
+.aboutUs_info_desc ul li {
+  list-style-type: none;
+  margin: 10px 0px;
+}
+.aboutUs_info_desc ul li i {
+  color: #3368c6;
+}
+.aboutUs_info_button {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
 body {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
+}
+
+#indexPage {
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }/*# sourceMappingURL=Main.css.map */
