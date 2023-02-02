@@ -1,4 +1,5 @@
  .navbar{
+    z-index: 9;
     &_container{
         &_menuBox{
             display: flex;
@@ -63,24 +64,18 @@
     }
     
  }
-
  .menuBox{
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 ;
-
     &_link a{
         text-decoration: none;
         color: $font_baseColor;
         font-size: 1rem;
         font-weight: 600;
     }
-
-    
 }
-
-
 .cartMini{
     background-color: red;
    padding:  0rem 1rem 0rem .7rem ;
@@ -147,4 +142,12 @@
             }
         }
     }
+}
+
+.navbarScroll{
+    
+    position: fixed !important;
+    width: 100%;
+    transition: 0.3s;
+    top: -20%;
 }
