@@ -1,12 +1,4 @@
-%message-shared {
-    border: 1px solid #ccc;
-    padding: 10px;
-    color: #333;
-  }
 
-  .message {
-    @extend %message-shared;
-  }
 
   %button_link{
 
@@ -44,3 +36,18 @@
       }
     
   }
+
+
+  %header_underlined{
+    font-size: 1rem;
+    font-weight: 600;
+    &::before{
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        width: 33px ;
+        height: 3px;
+        border-radius: 1px;
+        background-color: $baseColor;
+    }
+}
