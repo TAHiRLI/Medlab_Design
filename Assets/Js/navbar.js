@@ -27,7 +27,7 @@ for (const searchButton of searchButtons) {
 // Navbar Scroll
 // =============
 window.addEventListener("scroll", ()=>{
-    if(document.body.scrollTop > 400 || document.documentElement.scrollTop >400){
+    if(document.body.scrollTop > 200 || document.documentElement.scrollTop >200){
         document.getElementById("navbarScroll").style.top = "0";
     }
     else{
@@ -48,3 +48,19 @@ $(document).on("click", ".mobileBars", (e)=>{
         $(".mobileTop").toggleClass("active");
     }
 } )
+
+
+//==================
+
+//==================
+
+$(document).on("click", ".navbar_container_widgetBox_cart", (e)=>{
+    console.log()
+
+    if(e.target.classList.contains("scroll"))
+    $(".cartMiniScroll").toggleClass("active");
+    else{
+        $(".cartMiniTop").toggleClass("active");
+
+    }
+})

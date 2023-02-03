@@ -11028,27 +11028,15 @@ footer .footerWrap_contact_title::before, footer .footerWrap_blogs_title::before
   font-size: 1.2rem;
   color: black;
 }
-.navbar_container_menuBox .searchBox i:hover {
-  color: #3368c6;
-}
 .navbar_container_widgetBox i {
   transition: 0.3s;
   cursor: pointer;
   font-size: 1.2rem;
   color: black;
 }
-.navbar_container_widgetBox i:hover {
-  color: #3368c6;
-}
 .navbar_container_widgetBox a,
 .navbar_container_widgetBox a:hover {
   color: #444;
-}
-.navbar_container_widgetBox_cart:hover .cartMini {
-  max-height: 500px;
-  padding: 1.7rem 1rem 0.7rem 1rem;
-  top: 2.5rem;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 .menuBox {
@@ -11127,12 +11115,19 @@ footer .footerWrap_contact_title::before, footer .footerWrap_blogs_title::before
   background-color: #3368c6;
   color: white;
 }
+.cartMini.active {
+  max-height: 500px;
+  padding: 1.7rem 1rem 0.7rem 1rem;
+  top: 2.5rem;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
 
 .navbarScroll {
   position: fixed !important;
   width: 100%;
   transition: 0.3s;
   top: -20%;
+  z-index: 9;
 }
 
 .mobile {

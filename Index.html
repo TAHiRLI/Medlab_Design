@@ -23,10 +23,349 @@
     id="indexPage"
     style="background-image: url('/Assets/Images/bg-bottom-right.png')"
   >
-    <div class="p-3 bg-info">
-      <a href="Components/_Navbar.html">Go to navbar</a>
-    </div>
+    
+    <!-- Navbar Main  -->
+    <nav class="navbar py-3 bg-light">
+      <div
+        class=" navbar_container px-xl-5 px-lg-2 mx-xl-3 mx-lg-1"
+      >
+        <div class="navbar_container_logoBox ms-lg-5">
+          <div>
+            <a href="#">
+              <img src="../Assets/Images/logo/logo.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="d-flex">
+          <div
+            class="navbar_container_menuBox position-relative d-none d-lg-block"
+          >
+            <ul class="d-flex menuBox">
+              <li class="menuBox_link py-3 px-xl-3 px-md-2 d-inline-block">
+                <a href="#"> About us</a>
+              </li>
+              <li class="menuBox_link py-3 px-xl-3 px-md-2 d-inline-block">
+                <a href="#"> Services </a>
+              </li>
+              <li class="menuBox_link py-3 px-xl-3 px-md-2 d-inline-block">
+                <a href="#"> Shop </a>
+              </li>
+              <li class="menuBox_link py-3 px-xl-3 px-md-2 d-inline-block">
+                <a href="#"> Our specialists</a>
+              </li>
+              <li class="menuBox_link py-3 px-xl-3 px-md-2 d-inline-block">
+                <a href="#"> Testimonials </a>
+              </li>
+              <li class="menuBox_link py-3 px-xl-3 px-md-2 d-inline-block">
+                <a href="#"> Blog </a>
+              </li>
+              <li class="menuBox_link py-3 px-xl-3 px-md-2 d-inline-block">
+                <a href="#"> Contact </a>
+              </li>
+              <li class="menuBox_link d-inline-block searchBox bg-light">
+                <input class="bg-light" type="text" placeholder="Search..." />
+                <i class="fas fa-search"></i>
+              </li>
+            </ul>
+          </div>
 
+          <div class="navbar_container_widgetBox d-flex align-items-center">
+            <div
+              class="navbar_container_widgetBox_cart   mx-3 position-relative p-2"
+            >
+             <i class="fa-sharp fa-solid fa-bag-shopping"></i>
+              <span class="cartCount rounded-pill">12</span>
+              <div class="cartMini cartMiniTop position-absolute">
+                <ul class="cartMini_list p-0">
+                  <li
+                    class="cartMini_list_item mt-2 position-relative align-items-center me-0 ms-0"
+                  >
+                    <i
+                      class="las la-times p-1 cartMini_list_item_close position-absolute top-0 end-0"
+                    ></i>
+
+                    <div class="cartMini_list_item_image mx-2">
+                      <img
+                        src="../Assets/Uploads/Products/prd-sm-1.jpg"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="me-2">
+                      <span class="cartMini_list_item_title mb-0 pe-4">
+                        <a href="">Active Wow Teeth tasty Charcoal Powder</a>
+                      </span>
+                      <p class="cartMini_list_item_price mb-0 mt-2">$38</p>
+                    </div>
+                  </li>
+                  <li
+                    class="cartMini_list_item mt-2 position-relative align-items-center me-0 ms-0"
+                  >
+                    <i
+                      class="las la-times p-1 cartMini_list_item_close position-absolute top-0 end-0"
+                    ></i>
+
+                    <div class="cartMini_list_item_image mx-2">
+                      <img src="../Assets/Images/logo/logo.png" alt="" />
+                    </div>
+
+                    <div class="me-2">
+                      <span class="cartMini_list_item_title mb-0 pe-4">
+                        <a href="">Active Wow Teeth tasty Charcoal Powder</a>
+                      </span>
+                      <p class="cartMini_list_item_price mb-0 mt-2">$38</p>
+                    </div>
+                  </li>
+                  <li
+                    class="cartMini_list_item mt-2 position-relative align-items-center me-0 ms-0"
+                  >
+                    <i
+                      class="las la-times p-1 cartMini_list_item_close position-absolute top-0 end-0"
+                    ></i>
+                    <div class="cartMini_list_item_image mx-2">
+                      <img
+                        src="../Assets/Uploads/Products/prd-sm-2.jpg"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="me-2">
+                      <span class="cartMini_list_item_title mb-0 pe-4">
+                        <a href="">Active Wow Teeth tasty Charcoal Powder</a>
+                      </span>
+                      <p class="cartMini_list_item_price mb-0 mt-2">$38.25</p>
+                    </div>
+                  </li>
+                </ul>
+
+                <hr />
+                <div class="cartMini_footer">
+                  <div class="d-flex justify-content-between fs-4 mb-2">
+                    <span>Total:</span> <span>$78.85</span>
+                  </div>
+                  <button class="checkoutBtn rounded-pill">CheckOut</button>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="navbar_container_widgetBox_profile p-3 d-none d-lg-block"
+            >
+              <a href=""> <i class="fa-solid fa-user"></i></a>
+
+              <button class="btn btn-outline-dark d-none rounded-1">
+                Sign In
+              </button>
+            </div>
+
+            <div
+              class="navbar_container_widgetBox_mobileMenu mobileBars d-md-block d-lg-none"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Mobile Menu -->
+      <div class="mobile mobileTop   d-block d-lg-none">
+        <ul class="mobileNav" >
+          <li  class="mobileNav_item active">
+            <a href="#" class="nav-link" >Home</a>
+          </li>
+          <li  class="mobileNav_item">
+            <a href="#" class="nav-link" >About Us</a>
+          </li>
+          <li class="mobileNav_item">
+            <a href="#" class="nav-link " >Services</a>
+          </li>
+          <li class="mobileNav_item">
+            <a href="#" class="nav-link " >Our Specialists</a>
+          </li>
+          <li class="mobileNav_item">
+            <a  href="#" class="nav-link">Testimonials</a>
+          </li>
+          <li class="mobileNav_item dropdown">
+            <a href="" class="nav-link">Blogs</a>
+          </li>
+          <li class="mobileNav_item">
+            <a href="#" class="nav-link" >Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--Navbar Scroll  -->
+    <nav id="navbarScroll" class="navbarScroll p-1 bg-light">
+      <div
+        class=" navbar_container px-xl-5 px-lg-2 mx-xl-3 mx-lg-1 m-auto"
+      >
+        <div class="navbar_container_logoBox ms-lg-5">
+          <div>
+            <a href="#">
+              <img src="../Assets/Images/logo/logo.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="d-flex">
+          <div
+            class="navbar_container_menuBox position-relative d-none d-lg-block"
+          >
+            <ul class="d-flex menuBox">
+              <li class="menuBox_link py-3 px-xl-3 px-md-2 d-inline-block">
+                <a href="#"> About us</a>
+              </li>
+              <li class="menuBox_link py-3 px-xl-3 px-md-2 d-inline-block">
+                <a href="#"> Services </a>
+              </li>
+              <li class="menuBox_link py-3 px-xl-3 px-md-2 d-inline-block">
+                <a href="#"> Shop </a>
+              </li>
+              <li class="menuBox_link py-3 px-xl-3 px-md-2 d-inline-block">
+                <a href="#"> Our specialists</a>
+              </li>
+              <li class="menuBox_link py-3 px-xl-3 px-md-2 d-inline-block">
+                <a href="#"> Testimonials </a>
+              </li>
+              <li class="menuBox_link py-3 px-xl-3 px-md-2 d-inline-block">
+                <a href="#"> Blog </a>
+              </li>
+              <li class="menuBox_link py-3 px-xl-3 px-md-2 d-inline-block">
+                <a href="#"> Contact </a>
+              </li>
+              <li class="menuBox_link d-inline-block searchBox bg-light">
+                <input class="bg-light" type="text" placeholder="Search..." />
+                <i id="search-icon" class="fas fa-search"></i>
+              </li>
+            </ul>
+          </div>
+
+          <div class="navbar_container_widgetBox d-flex align-items-center">
+            <div
+              class="navbar_container_widgetBox_cart scroll mx-2 position-relative p-2"
+            >
+             <i class="fa-sharp fa-solid fa-bag-shopping"></i>
+             <span class="cartCount rounded-pill">12</span>
+              <div class="cartMini cartMiniScroll position-absolute">
+                <ul class="cartMini_list p-0">
+                  <li
+                    class="cartMini_list_item mt-2 position-relative align-items-center me-0 ms-0"
+                  >
+                    <i
+                      class="las la-times p-1 cartMini_list_item_close position-absolute top-0 end-0"
+                    ></i>
+
+                    <div class="cartMini_list_item_image mx-2">
+                      <img
+                        src="../Assets/Uploads/Products/prd-sm-1.jpg"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="me-2">
+                      <span class="cartMini_list_item_title mb-0 pe-4">
+                        <a href="">Active Wow Teeth tasty Charcoal Powder</a>
+                      </span>
+                      <p class="cartMini_list_item_price mb-0 mt-2">$38</p>
+                    </div>
+                  </li>
+                  <li
+                    class="cartMini_list_item mt-2 position-relative align-items-center me-0 ms-0"
+                  >
+                    <i
+                      class="las la-times p-1 cartMini_list_item_close position-absolute top-0 end-0"
+                    ></i>
+
+                    <div class="cartMini_list_item_image mx-2">
+                      <img src="../Assets/Images/logo/logo.png" alt="" />
+                    </div>
+
+                    <div class="me-2">
+                      <span class="cartMini_list_item_title mb-0 pe-4">
+                        <a href="">Active Wow Teeth tasty Charcoal Powder</a>
+                      </span>
+                      <p class="cartMini_list_item_price mb-0 mt-2">$38</p>
+                    </div>
+                  </li>
+                  <li
+                    class="cartMini_list_item mt-2 position-relative align-items-center me-0 ms-0"
+                  >
+                    <i
+                      class="las la-times p-1 cartMini_list_item_close position-absolute top-0 end-0"
+                    ></i>
+                    <div class="cartMini_list_item_image mx-2">
+                      <img
+                        src="../Assets/Uploads/Products/prd-sm-2.jpg"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="me-2">
+                      <span class="cartMini_list_item_title mb-0 pe-4">
+                        <a href="">Active Wow Teeth tasty Charcoal Powder</a>
+                      </span>
+                      <p class="cartMini_list_item_price mb-0 mt-2">$38.25</p>
+                    </div>
+                  </li>
+                </ul>
+
+                <hr />
+                <div class="cartMini_footer">
+                  <div class="d-flex justify-content-between fs-4 mb-2">
+                    <span>Total:</span> <span>$78.85</span>
+                  </div>
+                  <button class="checkoutBtn rounded-pill">CheckOut</button>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="navbar_container_widgetBox_profile p-3 d-none d-lg-block"
+            >
+              <a href=""> <i class="fa-solid fa-user"></i></a>
+
+              <button class="btn btn-outline-dark d-none rounded-1">
+                Sign In
+              </button>
+            </div>
+
+            <div
+              class="navbar_container_widgetBox_mobileMenu mobileBars scroll d-md-block d-lg-none"
+            >
+              <i class="fa-solid fa-bars "></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Mobile Menu -->
+
+      <div class="mobile mobileScroll   d-block d-lg-none">
+        <ul class="mobileNav" >
+          <li  class="mobileNav_item active">
+            <a href="#" class="nav-link" >Home</a>
+          </li>
+          <li  class="mobileNav_item">
+            <a href="#" class="nav-link" >About Us</a>
+          </li>
+          <li class="mobileNav_item">
+            <a href="#" class="nav-link " >Services</a>
+          </li>
+          <li class="mobileNav_item">
+            <a href="#" class="nav-link " >Our Specialists</a>
+          </li>
+          <li class="mobileNav_item">
+            <a  href="#" class="nav-link">Testimonials</a>
+          </li>
+          <li class="mobileNav_item dropdown">
+            <a href="" class="nav-link">Blogs</a>
+          </li>
+          <li class="mobileNav_item">
+            <a href="#" class="nav-link" >Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+<!-- main Section -->
     <main>
       <!-- Main Slider -->
       <section id="MainSlider_Section" class="">
@@ -359,6 +698,8 @@
       src="https://kit.fontawesome.com/f0bcda735f.js"
       crossorigin="anonymous"
     ></script>
-    
+
+    <!-- Navbar Js -->
+    <script src="Assets/Js/navbar.js"></script>    
   </body>
 </html>
