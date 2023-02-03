@@ -8,7 +8,7 @@
 // Navbar Search
 // =============
 
-let searchButtons = document.getElementsByClassName("la-search");
+let searchButtons = document.getElementsByClassName("fa-search");
 
 for (const searchButton of searchButtons) {
 
@@ -27,11 +27,24 @@ for (const searchButton of searchButtons) {
 // Navbar Scroll
 // =============
 window.addEventListener("scroll", ()=>{
-    console.log( document.documentElement.scrollTop)
     if(document.body.scrollTop > 400 || document.documentElement.scrollTop >400){
         document.getElementById("navbarScroll").style.top = "0";
     }
     else{
         document.getElementById("navbarScroll").style.top = "-20%";
+        $(".mobileScroll").removeClass("active");
     }
 })
+
+// ===================
+// Mobile Menu Toggle
+// ===================
+
+$(document).on("click", ".mobileBars", (e)=>{
+    if(e.target.classList.contains("scroll")){
+        $(".mobileScroll").toggleClass("active");
+    }
+    else{
+        $(".mobileTop").toggleClass("active");
+    }
+} )
