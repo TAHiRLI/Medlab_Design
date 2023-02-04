@@ -362,7 +362,7 @@
     <!-- main Section -->
     <main>
       <!-- Main Slider -->
-      <section id="MainSlider_Section" class="">
+      <section id="MainSlider_Section" class="d-none">
         <div class="mainSlider position-relative">
           <!-- slide  -->
           <div class="mainSlider_item d-flex justify-content-center">
@@ -447,7 +447,7 @@
         </div>
       </section>
       <!-- About us  -->
-      <section id="AboutUs_Section" class="">
+      <section id="AboutUs_Section" class=" d-none">
         <div class="container py-5 my-3">
           <div class="aboutUs d-flex m-auto my-5">
             <div
@@ -526,11 +526,11 @@
         </div>
       </section>
 
-      <section id="Tests_Section" class="py-5  " >
+      <section id="Tests_Section" class="py-5 d-none " >
         <div class="container ">
-          <div class="sectionTitle">
+          <div class="sectionTitle tests ">
             <h2
-              class="h1 position-relative text-center double-title"
+              class="h1 position-relative text-center double-title text-dark title_underlined"
               data-title="General Tests"
             >
               General Diagnostic Tests
@@ -844,11 +844,11 @@
         </div>
       </section>
 
-      <section id="Doctors_Section" class="py-5">
+      <section id="Doctors_Section" class="py-5 d-none">
         <span class="sectionName text-center d-block mb-2" >Perfect Team</span>
         <div class="sectionTitle">
           <h2
-            class="h1 position-relative text-center double-title"
+            class="h1 position-relative text-center double-title text-dark title_underlined"
             data-title="Professional Care "
           >
           A Professional & Care Provider
@@ -959,6 +959,44 @@
           </div>
         </div>
 
+      </section>
+
+      <section id="Appointment_Section" class="py-5 ">
+        <div class="container ">
+          <div class="appointment row">
+            <div class="appointment_form col-md-6 ">
+              <div class="sectionTitle mt-5 ">
+                <h2
+                  class="h1 position-relative text-center text-dark double-title"
+                  data-title="Appointment"
+                >
+                Make an <span class="text-base">Appointment</span> 
+                </h2>
+              </div>
+
+              <p class="text-center">We believe in providing the best possible care to all our existing patients and welcome new patients to sample.</p>
+              <form action="" class="d-flex flex-column gap-3 mt-5">
+                <input type="text" class="form-control w-100" placeholder="Your Fullname*">
+                <div class="row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Your phone*">
+                  </div>
+                  <div class="col">
+
+                    <input type="email" class="form-control" placeholder="Your Email*">
+                  </div>
+
+                </div>
+                <textarea name="" id="" cols="30" rows="4" class="form-control" placeholder="Message"></textarea>
+                <button type="submit" class="appointment_form_submit rounded-pill align-self-center mt-4 ">Send Request</button>
+              </form>
+              
+            </div>
+            <div class="appointment_photo col-md-6 ">
+              <img src="Assets/Images/banner-appointment.png" alt="">
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 

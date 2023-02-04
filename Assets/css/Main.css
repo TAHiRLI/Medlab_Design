@@ -10933,7 +10933,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.tests_content_info_button, .aboutUs_info_button, footer .footerWrap_contact_addressButton, .mainSlider_item_content .button-87 {
+.appointment_form_submit, .tests_content_info_button, .aboutUs_info_button, footer .footerWrap_contact_addressButton, .mainSlider_item_content .button-87 {
   margin: 10px;
   padding: 15px 30px;
   text-align: center;
@@ -10959,10 +10959,10 @@ textarea.form-control-lg {
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-.tests_content_info_button:active, .aboutUs_info_button:active, footer .footerWrap_contact_addressButton:active, .mainSlider_item_content .button-87:active {
+.appointment_form_submit:active, .tests_content_info_button:active, .aboutUs_info_button:active, footer .footerWrap_contact_addressButton:active, .mainSlider_item_content .button-87:active {
   transform: scale(0.95);
 }
-.tests_content_info_button:hover, .aboutUs_info_button:hover, footer .footerWrap_contact_addressButton:hover, .mainSlider_item_content .button-87:hover {
+.appointment_form_submit:hover, .tests_content_info_button:hover, .aboutUs_info_button:hover, footer .footerWrap_contact_addressButton:hover, .mainSlider_item_content .button-87:hover {
   background-position: right center;
   color: #fff;
   text-decoration: none;
@@ -10980,6 +10980,12 @@ footer .footerWrap_contact_title::before, footer .footerWrap_blogs_title::before
   height: 3px;
   border-radius: 1px;
   background-color: #3368c6;
+}
+
+.info {
+  background: DarkGray;
+  box-shadow: 0 0 1px rgba(169, 169, 169, 0.25);
+  color: #fff;
 }
 
 .navbar {
@@ -11619,6 +11625,40 @@ footer .copyright a:hover {
   color: #3368c6;
 }
 
+.appointment_form .sectionTitle .double-title {
+  color: #f7f9fb;
+}
+.appointment_form .sectionTitle .double-title::after {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  font-size: 120px;
+  line-height: 1em;
+  white-space: nowrap;
+  content: attr(data-title);
+  color: #f7f9fb;
+  z-index: -1;
+  top: 25%;
+  left: 0%;
+  transform: translate(0%, -50%);
+}
+.appointment_form form input, .appointment_form form textarea {
+  font-size: 0.9rem;
+}
+.appointment_form form input:focus, .appointment_form form textarea:focus {
+  box-shadow: none;
+  border-color: #787878;
+}
+.appointment_form form input::-moz-placeholder, .appointment_form form textarea::-moz-placeholder {
+  font-size: 0.9rem;
+}
+.appointment_form form input:-ms-input-placeholder, .appointment_form form textarea:-ms-input-placeholder {
+  font-size: 0.9rem;
+}
+.appointment_form form input::placeholder, .appointment_form form textarea::placeholder {
+  font-size: 0.9rem;
+}
+
 .sectionName {
   color: #3368c6;
   font-size: 1.2rem;
@@ -11634,12 +11674,13 @@ footer .copyright a:hover {
   color: #444;
 }
 
-.double-title::after {
+.sectionTitle .double-title {
+  color: #f7f9fb;
+}
+.sectionTitle .double-title::after {
   position: absolute;
-  z-index: 0;
+  z-index: -1;
   right: 0;
-  left: -0.05em;
-  top: -0.65em;
   font-size: 120px;
   line-height: 1em;
   white-space: nowrap;
@@ -11647,10 +11688,11 @@ footer .copyright a:hover {
   color: #f7f9fb;
   z-index: -1;
   top: 50%;
-  right: 50%;
-  transform: translate(35%, -50%);
+  left: 0%;
+  transform: translate(0%, -50%);
 }
-.double-title::before {
+
+.title_underlined::before {
   position: absolute;
   content: "";
   width: 43px;
