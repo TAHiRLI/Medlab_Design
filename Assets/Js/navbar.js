@@ -27,12 +27,15 @@ for (const searchButton of searchButtons) {
 // Navbar Scroll
 // =============
 window.addEventListener("scroll", ()=>{
-    if(document.body.scrollTop > 200 || document.documentElement.scrollTop >200){
+    if(document.body.scrollTop > 400 || document.documentElement.scrollTop >400){
         document.getElementById("navbarScroll").style.top = "0";
+
     }
     else{
         document.getElementById("navbarScroll").style.top = "-20%";
         $(".mobileScroll").removeClass("active");
+       $(".cartMiniScroll").removeClass("active");
+
     }
 })
 
@@ -54,8 +57,8 @@ $(document).on("click", ".mobileBars", (e)=>{
 
 //==================
 
-$(document).on("click", ".navbar_container_widgetBox_cart", (e)=>{
-    console.log()
+$(document).on("click", ".fa-bag-shopping", (e)=>{
+    console.log(console.log(e.target))
 
     if(e.target.classList.contains("scroll"))
     $(".cartMiniScroll").toggleClass("active");
