@@ -7,14 +7,14 @@
 
 // components
 @import "Partials/navbar";
-@import "Partials/mainSlider";
+@import "Partials/sliders";
 @import "Partials/footer";
 
 // Pages
 @import "Partials/Pages/index";
 
 body {
-    color: $font_gray;
+    color: $font_baseColor;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
 }

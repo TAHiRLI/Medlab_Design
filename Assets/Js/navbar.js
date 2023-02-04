@@ -1,3 +1,8 @@
+//  Content
+// 1 Navbar Search
+// 2 Navbar Scroll
+// 3 Mobile Menu Toggle
+// 4 Cartmini opener
 
 
 
@@ -5,7 +10,7 @@
 
 
 // =============
-// Navbar Search
+// 1 Navbar Search
 // =============
 
 let searchButtons = document.getElementsByClassName("fa-search");
@@ -24,7 +29,7 @@ for (const searchButton of searchButtons) {
 
 
 // =============
-// Navbar Scroll
+// 2 Navbar Scroll
 // =============
 window.addEventListener("scroll", ()=>{
     if(document.body.scrollTop > 400 || document.documentElement.scrollTop >400){
@@ -40,7 +45,7 @@ window.addEventListener("scroll", ()=>{
 })
 
 // ===================
-// Mobile Menu Toggle
+// 3 Mobile Menu Toggle
 // ===================
 
 $(document).on("click", ".mobileBars", (e)=>{
@@ -54,7 +59,7 @@ $(document).on("click", ".mobileBars", (e)=>{
 
 
 //==================
-
+// 4 Cartmini opener
 //==================
 
 $(document).on("click", ".fa-bag-shopping", (e)=>{
