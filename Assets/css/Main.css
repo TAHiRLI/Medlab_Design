@@ -11465,12 +11465,6 @@ footer .copyright a:hover {
 .aboutUs_info {
   margin-left: 20px;
 }
-.aboutUs_info_sectionName {
-  color: #3368c6;
-  font-size: 1.6rem;
-  letter-spacing: 2.5px;
-  font-weight: 500;
-}
 .aboutUs_info_title {
   font-size: 2.2em;
   font-weight: 600;
@@ -11500,14 +11494,14 @@ footer .copyright a:hover {
   margin-bottom: 20px;
 }
 
-.tests_slider {
-  background-color: gray;
+#Tests_Section {
+  background-color: #f6f7f5;
 }
+
 .tests_slider_item {
-  background-color: greenyellow;
   width: 178px;
-  margin: 0 10px 20px;
-  padding: 20px 17px 15px;
+  margin: 0 10px 10px;
+  padding: 20px 17px 25px;
   cursor: pointer;
   text-shadow: none;
   font-size: 14px;
@@ -11522,11 +11516,12 @@ footer .copyright a:hover {
 }
 .tests_slider_item_icon i {
   transition: 0.3s;
-  font-size: 2rem;
+  font-size: 3.5rem;
   color: #3368c6;
 }
 .tests_slider_item_title {
   padding: 0 10px;
+  font-size: 1rem;
 }
 .tests_slider_item:hover, .tests_slider_item.slick-current {
   background-color: #3368c6;
@@ -11572,11 +11567,70 @@ footer .copyright a:hover {
   white-space: nowrap;
 }
 
-.testsTitle h2, .testsTitle .h2 {
+.doctor_search {
+  width: 25%;
+  margin: auto;
+}
+.doctor_search .form-control {
+  padding: 10px;
+  border-color: #787878;
+}
+.doctor_search .form-control:focus {
+  box-shadow: none;
+  border-color: #787878;
+}
+.doctor_search button {
+  padding: 7px 15px;
+  border-color: #787878;
+}
+.doctor_search button:hover {
+  color: #3368c6;
+  border: 1px solid #787878;
+}
+
+.doctors .doctor_box_photo {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.doctors .doctor_box_photo img {
+  transition: 0.5s;
+  width: 100%;
+}
+.doctors .doctor_box_photo_links {
+  background-color: white;
+  top: 2rem;
+  right: 0;
+}
+.doctors .doctor_box_photo_links a:hover {
+  color: #444;
+}
+.doctors .doctor_box:hover a img {
+  transform: scale(1.1);
+}
+.doctors .doctor_box_footer_name a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #444;
+}
+.doctors .doctor_box_footer_position {
+  color: #3368c6;
+}
+
+.sectionName {
+  color: #3368c6;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.sectionTitle h2, .sectionTitle .h2 {
   font-size: 2.25rem;
   font-weight: 600;
   z-index: 1;
-  line-height: 2.8em;
+  line-height: 2.2em;
   color: #444;
 }
 
@@ -11602,9 +11656,38 @@ footer .copyright a:hover {
   width: 43px;
   height: 4px;
   background-color: #3368c6;
-  bottom: 0px;
+  bottom: -10px;
   right: 50%;
   translate: 50%;
+}
+
+.arrow {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  top: 3rem;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  z-index: 3;
+  color: #3368c6;
+  transition: 0.5s;
+}
+.arrow:hover {
+  background-color: #3368c6;
+  color: white;
+}
+
+.next_button {
+  right: 4rem;
+}
+
+.prev_button {
+  left: 4rem;
+}
+
+.text-base {
+  color: #3368c6;
 }
 
 body {

@@ -447,7 +447,7 @@
         </div>
       </section>
       <!-- About us  -->
-      <section id="AboutUs_Section">
+      <section id="AboutUs_Section" class="">
         <div class="container py-5 my-3">
           <div class="aboutUs d-flex m-auto my-5">
             <div
@@ -485,7 +485,7 @@
               <!-- End -->
             </div>
             <div class="aboutUs_info col-md-6">
-              <span class="aboutUs_info_sectionName">About Us</span>
+              <span class="aboutUs_info_sectionName sectionName">About Us</span>
               <p class="aboutUs_info_title">
                 Personal Licensed
                 <br />
@@ -526,9 +526,9 @@
         </div>
       </section>
 
-      <section id="Tests_section" class="py-5">
-        <div class="container bg-danger">
-          <div class="testsTitle">
+      <section id="Tests_Section" class="py-5  " >
+        <div class="container ">
+          <div class="sectionTitle">
             <h2
               class="h1 position-relative text-center double-title"
               data-title="General Tests"
@@ -537,9 +537,13 @@
             </h2>
           </div>
 
-          <div class="tests">
+          <div class="tests position-relative">
             <!-- Slider Nav -->
-            <div class="tests_slider tests_sliderNav mt-4 mx-5">
+            <div class="mt-4 mx-5">
+              <button id="next" class="fa-solid fa-chevron-right next_button arrow"></button>
+              <button class="fa-solid fa-chevron-left prev_button arrow"></button>
+                  <div class="tests_slider tests_sliderNav ">
+
               <!-- Item -->
               <a class="tests_slider_item d-block text-decoration-none">
                 <div class="tests_slider_item_icon my-2">
@@ -553,7 +557,7 @@
               <!-- Item -->
               <a class="tests_slider_item d-block text-decoration-none">
                 <div class="tests_slider_item_icon my-2">
-                  <i class="fa-solid fa-flask-vial"></i>
+                  <i class="fa-solid fa-vial"></i>
                 </div>
                 <span class="tests_slider_item_title d-block mt-3"
                   >Naturopathic Tests2</span
@@ -563,7 +567,7 @@
               <!-- Item -->
               <a class="tests_slider_item d-block text-decoration-none">
                 <div class="tests_slider_item_icon my-2">
-                  <i class="fa-solid fa-flask-vial"></i>
+                  <i class=" fa-solid fa-dna"></i>
                 </div>
                 <span class="tests_slider_item_title d-block mt-3"
                   >Naturopathic Tests3</span
@@ -599,13 +603,19 @@
                 >
               </a>
             </div>
+            </div>
+        
+
+
+
+
 
             <!-- Slider Display -->
             <div class="tests_sliderFor">
               <!-- Slide Item  -->
               <div>
                 <div
-                  class="row tests_content mx-5 bg-warning mt-4"
+                  class="row tests_content mx-5  mt-4"
                   style="
                     background-image: url('Assets/Images/bg-department.png');
                   "
@@ -662,7 +672,7 @@
               <!-- Slide Item  -->
               <div>
                 <div
-                  class="row tests_content mx-5 bg-warning mt-4"
+                  class="row tests_content mx-5  mt-4"
                   style="
                     background-image: url('Assets/Images/bg-department.png');
                   "
@@ -719,7 +729,7 @@
               <!-- Slide Item  -->
               <div>
                 <div
-                  class="row tests_content mx-5 bg-warning mt-4"
+                  class="row tests_content mx-5  mt-4"
                   style="
                     background-image: url('Assets/Images/bg-department.png');
                   "
@@ -776,7 +786,7 @@
               <!-- Slide Item  -->
               <div>
                 <div
-                  class="row tests_content mx-5 bg-warning mt-4"
+                  class="row tests_content mx-5  mt-4"
                   style="
                     background-image: url('Assets/Images/bg-department.png');
                   "
@@ -832,6 +842,123 @@
             </div>
           </div>
         </div>
+      </section>
+
+      <section id="Doctors_Section" class="py-5">
+        <span class="sectionName text-center d-block mb-2" >Perfect Team</span>
+        <div class="sectionTitle">
+          <h2
+            class="h1 position-relative text-center double-title"
+            data-title="Professional Care "
+          >
+          A Professional & Care Provider
+          </h2>
+        </div>
+
+        <div class="doctor_search">
+          <div class="input-group my-5">
+            <input type="text" class="form-control " placeholder="Search For Specialist" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn   fas fa-search" ></button>
+          </div>
+          
+          
+        </div>
+
+        <div class="doctors ">
+          <div class="container">
+
+            <div class="doctorSlider d-flex  mx-5">
+
+
+              <!-- slide -->
+              <div class="doctor_box mx-3">
+                <div class="doctor_box_photo position-relative">
+                  <a href="#" class="d-block w-100 h-100">
+                    <img src="Assets/Uploads/Doctors/doctor-01.jpg" alt="">
+                  </a>
+                  <div class="doctor_box_photo_links bg-light  position-absolute">
+
+                    <div class="p-2 text-center"><a href="#" class="text-decoration-none text-base"><i class="fa-brands fa-facebook-f"></i></a></div>
+                    <div class="p-2 text-center"><a href="#" class="text-decoration-none text-base"><i class="fa-brands fa-instagram"></i></a></div>
+                    <div class="p-2 text-center"><a href="#" class="text-decoration-none text-base"><i class="fa-brands fa-twitter"></i></a></div>
+
+                  </div>
+                </div>
+                <div class="doctor_box_footer">
+                    <h5 class="doctor_box_footer_name text-center my-3"> <a href="#">Dr. Robert Rush</a></h5>
+                    <div class="doctor_box_footer_position text-center">Psychiatrist</div>
+
+                </div>
+              </div>
+              
+              <!-- slide -->
+              <div class="doctor_box mx-3">
+                <div class="doctor_box_photo position-relative">
+                  <a href="#" class="d-block w-100 h-100">
+                    <img src="Assets/Uploads/Doctors/doctor-02.jpg" alt="">
+                  </a>
+                  <div class="doctor_box_photo_links bg-light  position-absolute">
+
+                    <div class="p-2 text-center"><a href="#" class="text-decoration-none text-base"><i class="fa-brands fa-facebook-f"></i></a></div>
+                    <div class="p-2 text-center"><a href="#" class="text-decoration-none text-base"><i class="fa-brands fa-instagram"></i></a></div>
+                    <div class="p-2 text-center"><a href="#" class="text-decoration-none text-base"><i class="fa-brands fa-twitter"></i></a></div>
+
+                  </div>
+                </div>
+                <div class="doctor_box_footer">
+                    <h5 class="doctor_box_footer_name text-center my-3"> <a href="#">Dr. Robert Rush</a></h5>
+                    <div class="doctor_box_footer_position text-center">Psychiatrist</div>
+
+                </div>
+              </div>
+              <!-- slide -->
+              <div class="doctor_box mx-3">
+                <div class="doctor_box_photo position-relative">
+                  <a href="#" class="d-block w-100 h-100">
+                    <img src="Assets/Uploads/Doctors/doctor-03.jpg" alt="">
+                  </a>
+                  <div class="doctor_box_photo_links bg-light  position-absolute">
+
+                    <div class="p-2 text-center"><a href="#" class="text-decoration-none text-base"><i class="fa-brands fa-facebook-f"></i></a></div>
+                    <div class="p-2 text-center"><a href="#" class="text-decoration-none text-base"><i class="fa-brands fa-instagram"></i></a></div>
+                    <div class="p-2 text-center"><a href="#" class="text-decoration-none text-base"><i class="fa-brands fa-twitter"></i></a></div>
+
+                  </div>
+                </div>
+                <div class="doctor_box_footer">
+                    <h5 class="doctor_box_footer_name text-center my-3"> <a href="#">Dr. Robert Rush</a></h5>
+                    <div class="doctor_box_footer_position text-center">Psychiatrist</div>
+
+                </div>
+              </div>
+              <!-- slide -->
+              <div class="doctor_box mx-3">
+                <div class="doctor_box_photo position-relative">
+                  <a href="#" class="d-block w-100 h-100">
+                    <img src="Assets/Uploads/Doctors/doctor-04.jpg" alt="">
+                  </a>
+                  <div class="doctor_box_photo_links bg-light  position-absolute">
+
+                    <div class="p-2 text-center"><a href="#" class="text-decoration-none text-base"><i class="fa-brands fa-facebook-f"></i></a></div>
+                    <div class="p-2 text-center"><a href="#" class="text-decoration-none text-base"><i class="fa-brands fa-instagram"></i></a></div>
+                    <div class="p-2 text-center"><a href="#" class="text-decoration-none text-base"><i class="fa-brands fa-twitter"></i></a></div>
+
+                  </div>
+                </div>
+                <div class="doctor_box_footer">
+                    <h5 class="doctor_box_footer_name text-center my-3"> <a href="#">Dr. Robert Rush</a></h5>
+                    <div class="doctor_box_footer_position text-center">Psychiatrist</div>
+
+                </div>
+              </div>
+        
+              <!-- END -->
+
+            </div>
+
+          </div>
+        </div>
+
       </section>
     </main>
 

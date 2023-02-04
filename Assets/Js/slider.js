@@ -1,7 +1,7 @@
 
 //  Content
 // 1 Main Slider page/index
-
+// 2 services slider
 
 
 
@@ -25,13 +25,13 @@ $(document).ready(function () {
         pauseOnHover:false,
         fade: true,
         cssEase: 'linear',
-        arrows: false
+        arrows: false,
     });
 });
 
 
 //=================================
-// 1 Main Slider page/index
+// 2 services slider
 //=================================
 
 $(document).ready(function () {
@@ -45,7 +45,10 @@ $(document).ready(function () {
         asNavFor: '.tests_sliderFor',
         dots: false,
         centerMode: false,
-        focusOnSelect: true
+        focusOnSelect: true,
+        nextArrow: $(".next_button"),
+        prevArrow: $(".prev_button")
+
     });
 });
 
@@ -56,4 +59,15 @@ $('.tests_sliderFor').slick({
     fade: true,
     speed: 0,
     asNavFor: '.tests_sliderNav'
+  });
+
+  // Doctors slider
+
+  $('.doctorSlider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    centerMode:false,
+    autoplaySpeed: 2000,
+    arrows:false
   });
