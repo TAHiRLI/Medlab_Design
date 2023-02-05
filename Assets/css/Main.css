@@ -11073,6 +11073,12 @@ footer .footerWrap_contact_title::before, footer .footerWrap_blogs_title::before
   color: #3368c6;
 }
 
+.bg-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
 .navbar {
   z-index: 9;
   display: flex;
@@ -11825,6 +11831,78 @@ footer .copyright a:hover {
 
 .values_item i {
   font-size: 5rem;
+}
+
+.promo_content_title {
+  font-size: 2.4rem;
+  line-height: 47px;
+  font-weight: 600;
+}
+.promo_content_desc {
+  font-size: 1rem;
+  line-height: 1em;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+.promo_content_btn {
+  padding: 11px 20px;
+  font-weight: 400;
+  border-width: 2px;
+}
+
+#OurOffice_Section .title_underlined::before {
+  bottom: 0;
+  left: 0;
+}
+#OurOffice_Section .galeryNav_img {
+  cursor: pointer;
+}
+#OurOffice_Section .galeryNav .slick-prev,
+#OurOffice_Section .galeryNav .slick-next {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 30px;
+  height: 100%;
+  cursor: pointer;
+  color: #3368c6;
+  outline: none;
+  text-align: center;
+  transition: 0.2s;
+  border: 0;
+  z-index: 2;
+}
+#OurOffice_Section .galery .slick-prev,
+#OurOffice_Section .galery .slick-next {
+  position: absolute;
+  top: 0;
+  top: 50%;
+  display: block;
+  width: 30px;
+  height: 75px;
+  margin-top: -37px;
+  cursor: pointer;
+  color: #3368c6;
+  outline: none;
+  text-align: center;
+  transition: 0.2s;
+  border: 0;
+  z-index: 2;
+}
+#OurOffice_Section .slick-prev {
+  border-radius: 0 10px 10px 0;
+  left: 0;
+}
+#OurOffice_Section .slick-next {
+  border-radius: 10px 0 0 10px;
+  right: 0;
+}
+#OurOffice_Section .slick-button {
+  background-color: rgb(177, 177, 177);
+}
+#OurOffice_Section .slick-button:hover {
+  background-color: #3368c6;
+  color: white;
 }
 
 body {
