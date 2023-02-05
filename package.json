@@ -18,7 +18,8 @@
   "homepage": "https://github.com/TAHiRLI/Medlab_Design#readme",
   "dependencies": {
     "bootstrap": "^5.0.0",
-    "jquery": "^3.6.3",
-    "line-awesome": "^1.3.0"
+    "jquery": "^3.6.0",
+    "line-awesome": "^1.3.0",
+    "waypoints": "^4.0.1"
   }
 }

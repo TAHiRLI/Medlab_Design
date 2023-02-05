@@ -11644,6 +11644,7 @@ footer .copyright a:hover {
 }
 .appointment_form form input, .appointment_form form textarea {
   font-size: 0.9rem;
+  padding: 10px;
 }
 .appointment_form form input:focus, .appointment_form form textarea:focus {
   box-shadow: none;
@@ -11657,6 +11658,84 @@ footer .copyright a:hover {
 }
 .appointment_form form input::placeholder, .appointment_form form textarea::placeholder {
   font-size: 0.9rem;
+}
+
+#Blogs_Seciton {
+  background: rgb(248, 250, 248);
+  background: linear-gradient(90deg, rgb(248, 250, 248) 0%, rgb(255, 255, 255) 46%, rgba(255, 255, 255, 0.137692577) 47%, rgba(255, 255, 255, 0) 89%);
+}
+
+.gridBlogs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.blogs .sectionTitle .double-title {
+  color: #f7f9fb;
+}
+.blogs .sectionTitle .double-title::after {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  font-size: 80px;
+  line-height: 1em;
+  white-space: nowrap;
+  content: attr(data-title);
+  color: #f7f9fb;
+  z-index: -1;
+  top: 45%;
+  left: 0%;
+  transform: translate(0%, -50%);
+}
+.blogs_item_photo {
+  width: 140px;
+  height: 140px;
+}
+.blogs_item_photo img {
+  width: 100%;
+}
+.blogs_item_info_date {
+  color: #3368c6;
+  font-weight: 500;
+}
+.blogs_item_info_title a {
+  font-weight: 600;
+  transition: 0.3s;
+  color: #444;
+}
+.blogs_item_info_title a:hover {
+  color: #3368c6;
+}
+
+.achievements_photo {
+  background-color: yellow;
+  width: 100%;
+}
+.achievements_photo img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 110%;
+  height: 80%;
+}
+.achievements_counter {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 110%;
+  background-color: #3368c6;
+  color: white;
+}
+.achievements_counter_number {
+  font-size: 2.3rem;
+}
+.achievements_counter_title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.achievements_counter_2 {
+  border-left: 1px solid #f7f9fb;
+  border-right: 1px solid #f7f9fb;
 }
 
 .sectionName {
