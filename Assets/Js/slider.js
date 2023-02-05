@@ -2,7 +2,8 @@
 //  Content
 // 1 Main Slider page/index
 // 2 services slider
-
+// 3  Doctors slider
+// 4 Core Values Slider / About Us Page
 
 
 
@@ -61,9 +62,23 @@ $('.tests_sliderFor').slick({
     asNavFor: '.tests_sliderNav'
   });
 
-  // Doctors slider
+//=================================
+// 3  Doctors slider
+//=================================
 
   $('.doctorSlider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    centerMode:false,
+    autoplaySpeed: 2000,
+    arrows:false
+  });
+
+//=================================
+// 4 Core Values Slider / About Us Page
+//=================================
+$('.valuesSlider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
