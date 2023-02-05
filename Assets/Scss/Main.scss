@@ -7,6 +7,9 @@
 @import "Partials/extends";
 @import "Partials/mixins";
 
+
+// Global classes
+@import "Partials/globalClasses";
 // components
 @import "Partials/navbar";
 @import "Partials/sliders";
@@ -14,13 +17,19 @@
 
 // Pages
 @import "Partials/Pages/index";
+@import "Partials/Pages/aboutUs";
 
 body {
-    color: $font_baseColor;
+  color: $font_baseColor;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
 }
-
+ul{
+    margin: 0;
+    li{
+        list-style: none;
+    }
+}
 
 #indexPage {
   background-position: right;

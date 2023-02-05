@@ -1,0 +1,88 @@
+//=======================
+// Global classes
+//=======================
+
+.sectionName {
+    color: $baseColor;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+  }
+
+.sectionTitle h2 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    z-index: 1;
+    line-height: 2.2em;
+    color: #444;
+  }
+
+  .sectionTitle {
+    .double-title{
+        @include doubled-title($font_milk, 50%, 0% ,0%,-50% , 120px)
+    }
+}
+.title_underlined{
+    &::before {
+        position: absolute;
+        content: "";
+        width: 43px;
+        height: 4px;
+        background-color: $baseColor;
+        bottom: -10px;
+        right: 50%;
+        translate: 50%;
+      }
+}
+
+
+
+// slider
+
+.arrow{
+    position: absolute;
+    background-color: rgba($color: white, $alpha: 0.7);
+    border: none;
+    top: 3rem;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    z-index: 3;
+    color: $baseColor;
+    transition: 0.5s;
+    &:hover{
+        background-color: $baseColor;
+        color: white;
+    }
+
+}
+
+.next_button{
+    right: 4rem;
+}
+.prev_button{
+    left: 4rem;
+}
+
+.text-base{
+    color: $baseColor
+}
+
+
+// ==================
+// Bread Crumb
+// ==================
+
+.breadCrumb{
+   p a{
+         font-size: 0.8rem;
+         display: inline-block;
+         margin: 0 5px;
+        color: black;
+        transition: 0.3s;
+        text-decoration: none;
+        &:hover{
+            color: $baseColor
+        }
+    }
+}
