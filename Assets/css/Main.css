@@ -11079,6 +11079,14 @@ footer .footerWrap_contact_title::before, footer .footerWrap_blogs_title::before
   background-position: top center;
 }
 
+.link-base {
+  color: #444;
+  transition: 0.3s ease;
+}
+.link-base:hover {
+  color: #3368c6;
+}
+
 .navbar {
   z-index: 9;
   display: flex;
@@ -11905,6 +11913,48 @@ footer .copyright a:hover {
   color: white;
 }
 
+#Our_Services_Section .services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+#Our_Services_Section .services_card {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+#Our_Services_Section .services_card_photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 340px;
+}
+#Our_Services_Section .services_card_photo img {
+  transition: 0.5s;
+}
+#Our_Services_Section .services_card_photo:hover img {
+  border-radius: 20%;
+}
+#Our_Services_Section .services_card_name .title_underlined::before {
+  left: -16.5px;
+}
+#Our_Services_Section .services_card_desc {
+  color: #444;
+}
+#Our_Services_Section .services_card_desc ul {
+  margin: 0;
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  #Our_Services_Section .services {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 767px) {
+  #Our_Services_Section .services {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
 body {
   color: #444;
   font-size: 16px;

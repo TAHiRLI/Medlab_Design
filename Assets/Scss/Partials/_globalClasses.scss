@@ -93,3 +93,11 @@
     background-repeat: no-repeat;
     background-position: top center;
 }
+
+.link-base{
+    color: $font_baseColor;
+    transition: .3s ease;
+    &:hover{
+        color:$baseColor;
+    }
+}
