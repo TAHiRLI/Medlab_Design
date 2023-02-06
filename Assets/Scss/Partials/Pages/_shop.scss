@@ -41,12 +41,14 @@
     gap: 3rem 2rem;
 
     .product {
+      transition: 0.5s;
       border: 1px solid #f0f0f0;
       &:hover{
         box-shadow: 0 0 25px rgb(0 0 0 / 10%);
       }
       &-img{
         height: 45vh;
+        border-bottom:1px solid #f0f0f0;
         img{
           height: 100%;
         }

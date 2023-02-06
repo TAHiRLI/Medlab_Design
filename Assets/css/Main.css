@@ -10933,7 +10933,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-#Doctor-Details_Section .doctorDetails_info_name .set_meeting, #AllDoctors_Section .all-doctors_card_links .set_meeting, .appointment_form_submit, .tests_content_info_button, .aboutUs_info_button, footer .footerWrap_contact_addressButton, .mainSlider_item_content .button-87 {
+#Contact-form_Section .submitBtn, #Doctor-Details_Section .doctorDetails_info_name .set_meeting, #AllDoctors_Section .all-doctors_card_links .set_meeting, .appointment_form_submit, .tests_content_info_button, .aboutUs_info_button, footer .footerWrap_contact_addressButton, .mainSlider_item_content .button-87 {
   margin: 10px;
   padding: 15px 30px;
   text-align: center;
@@ -10959,10 +10959,10 @@ textarea.form-control-lg {
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-#Doctor-Details_Section .doctorDetails_info_name .set_meeting:active, #AllDoctors_Section .all-doctors_card_links .set_meeting:active, .appointment_form_submit:active, .tests_content_info_button:active, .aboutUs_info_button:active, footer .footerWrap_contact_addressButton:active, .mainSlider_item_content .button-87:active {
+#Contact-form_Section .submitBtn:active, #Doctor-Details_Section .doctorDetails_info_name .set_meeting:active, #AllDoctors_Section .all-doctors_card_links .set_meeting:active, .appointment_form_submit:active, .tests_content_info_button:active, .aboutUs_info_button:active, footer .footerWrap_contact_addressButton:active, .mainSlider_item_content .button-87:active {
   transform: scale(0.95);
 }
-#Doctor-Details_Section .doctorDetails_info_name .set_meeting:hover, #AllDoctors_Section .all-doctors_card_links .set_meeting:hover, .appointment_form_submit:hover, .tests_content_info_button:hover, .aboutUs_info_button:hover, footer .footerWrap_contact_addressButton:hover, .mainSlider_item_content .button-87:hover {
+#Contact-form_Section .submitBtn:hover, #Doctor-Details_Section .doctorDetails_info_name .set_meeting:hover, #AllDoctors_Section .all-doctors_card_links .set_meeting:hover, .appointment_form_submit:hover, .tests_content_info_button:hover, .aboutUs_info_button:hover, footer .footerWrap_contact_addressButton:hover, .mainSlider_item_content .button-87:hover {
   background-position: right center;
   color: #fff;
   text-decoration: none;
@@ -11021,6 +11021,9 @@ footer .footerWrap_contact_title::before, footer .footerWrap_blogs_title::before
   transform: translate(0%, -50%);
 }
 
+.title_underlined {
+  position: relative;
+}
 .title_underlined::before {
   position: absolute;
   content: "";
@@ -11097,6 +11100,10 @@ footer .footerWrap_contact_title::before, footer .footerWrap_blogs_title::before
 
 .pointer {
   cursor: pointer;
+}
+
+.form-control {
+  box-shadow: none !important;
 }
 
 .checkbox-wrapper-28 {
@@ -12248,6 +12255,7 @@ footer .copyright a:hover {
   gap: 3rem 2rem;
 }
 .shop_products_cards .product {
+  transition: 0.5s;
   border: 1px solid #f0f0f0;
 }
 .shop_products_cards .product:hover {
@@ -12255,6 +12263,7 @@ footer .copyright a:hover {
 }
 .shop_products_cards .product-img {
   height: 45vh;
+  border-bottom: 1px solid #f0f0f0;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -12272,6 +12281,39 @@ footer .copyright a:hover {
   background-color: #3368c6;
   color: white;
   transform: scale(1.05);
+}
+
+#Contact-info_Section .title_underlined::before {
+  left: 0;
+  translate: 0;
+  height: 1px;
+  width: 25px;
+}
+
+#Contact-form_Section .title_underlined::before {
+  left: 0;
+  translate: 0;
+}
+#Contact-form_Section .links_link {
+  height: 69px;
+  width: 69px;
+  border-radius: 50%;
+  transition: 0.3s;
+  border: none;
+  font-size: 1.5rem;
+}
+#Contact-form_Section .links_link:hover {
+  box-shadow: inset 0 0 0 5px rgba(51, 104, 198, 0.2);
+}
+#Contact-form_Section input {
+  margin-top: 15px;
+  min-height: 45px;
+  font-size: 14px;
+}
+#Contact-form_Section textarea {
+  margin-top: 15px;
+  font-size: 14px;
+  min-height: 155px;
 }
 
 body {

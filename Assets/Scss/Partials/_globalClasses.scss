@@ -23,6 +23,7 @@
     }
 }
 .title_underlined{
+  position: relative;
     &::before {
         position: absolute;
         content: "";
@@ -95,7 +96,7 @@
 }
 
 .link-base{
-    color: $font_baseColor;
+    color: $font_baseColor ;
     transition: .3s ease;
     &:hover{
         color:$baseColor;
@@ -114,6 +115,9 @@
     cursor: pointer;
 }
 
+.form-control{
+  box-shadow: none !important;
+}
 
 
 
