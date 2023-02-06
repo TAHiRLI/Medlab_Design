@@ -143,7 +143,7 @@ $('.departmentsSlider').slick({
   slidesToScroll: 1,
   autoplay: false,
   centerMode:true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 4000,
   arrows:false,
   draggabe:true,
   focusOnSelect: true,

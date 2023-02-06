@@ -101,3 +101,11 @@
         color:$baseColor;
     }
 }
+
+.link-hover-base{
+    color: $baseColor;
+    transition: .3s ease;
+    &:hover{
+        color:$font_baseColor;
+    }
+}

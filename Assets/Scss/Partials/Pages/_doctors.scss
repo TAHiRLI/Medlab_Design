@@ -66,3 +66,24 @@
 }
 
 
+#Doctor-Details_Section{
+    .doctorDetails{
+        &_photo{
+            &_info{
+                width: 100%;
+            tr:nth-child(odd){
+                    background-color: #f6f6f6;
+                }
+            }
+        }
+        &_info{
+            &_name {
+              .set_meeting{
+                @extend %button_link;
+              }
+               
+            }
+
+        }
+    }
+}

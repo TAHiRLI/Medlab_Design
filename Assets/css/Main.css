@@ -10933,7 +10933,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-#AllDoctors_Section .all-doctors_card_links .set_meeting, .appointment_form_submit, .tests_content_info_button, .aboutUs_info_button, footer .footerWrap_contact_addressButton, .mainSlider_item_content .button-87 {
+#Doctor-Details_Section .doctorDetails_info_name .set_meeting, #AllDoctors_Section .all-doctors_card_links .set_meeting, .appointment_form_submit, .tests_content_info_button, .aboutUs_info_button, footer .footerWrap_contact_addressButton, .mainSlider_item_content .button-87 {
   margin: 10px;
   padding: 15px 30px;
   text-align: center;
@@ -10959,10 +10959,10 @@ textarea.form-control-lg {
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-#AllDoctors_Section .all-doctors_card_links .set_meeting:active, .appointment_form_submit:active, .tests_content_info_button:active, .aboutUs_info_button:active, footer .footerWrap_contact_addressButton:active, .mainSlider_item_content .button-87:active {
+#Doctor-Details_Section .doctorDetails_info_name .set_meeting:active, #AllDoctors_Section .all-doctors_card_links .set_meeting:active, .appointment_form_submit:active, .tests_content_info_button:active, .aboutUs_info_button:active, footer .footerWrap_contact_addressButton:active, .mainSlider_item_content .button-87:active {
   transform: scale(0.95);
 }
-#AllDoctors_Section .all-doctors_card_links .set_meeting:hover, .appointment_form_submit:hover, .tests_content_info_button:hover, .aboutUs_info_button:hover, footer .footerWrap_contact_addressButton:hover, .mainSlider_item_content .button-87:hover {
+#Doctor-Details_Section .doctorDetails_info_name .set_meeting:hover, #AllDoctors_Section .all-doctors_card_links .set_meeting:hover, .appointment_form_submit:hover, .tests_content_info_button:hover, .aboutUs_info_button:hover, footer .footerWrap_contact_addressButton:hover, .mainSlider_item_content .button-87:hover {
   background-position: right center;
   color: #fff;
   text-decoration: none;
@@ -11085,6 +11085,14 @@ footer .footerWrap_contact_title::before, footer .footerWrap_blogs_title::before
 }
 .link-base:hover {
   color: #3368c6;
+}
+
+.link-hover-base {
+  color: #3368c6;
+  transition: 0.3s ease;
+}
+.link-hover-base:hover {
+  color: #444;
 }
 
 .navbar {
@@ -12006,6 +12014,12 @@ footer .copyright a:hover {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
+}
+#Doctor-Details_Section .doctorDetails_photo_info {
+  width: 100%;
+}
+#Doctor-Details_Section .doctorDetails_photo_info tr:nth-child(odd) {
+  background-color: #f6f6f6;
 }
 body {
   color: #444;
