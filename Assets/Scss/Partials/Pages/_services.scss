@@ -10,9 +10,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            max-height: 340px;
             img{
-                transition: 0.5s;
+                height: 40vh;
+                transition: 0.3s;
+                object-fit: cover;
             }
 
             &:hover img{

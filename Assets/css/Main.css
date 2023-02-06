@@ -10933,7 +10933,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.appointment_form_submit, .tests_content_info_button, .aboutUs_info_button, footer .footerWrap_contact_addressButton, .mainSlider_item_content .button-87 {
+#AllDoctors_Section .all-doctors_card_links .set_meeting, .appointment_form_submit, .tests_content_info_button, .aboutUs_info_button, footer .footerWrap_contact_addressButton, .mainSlider_item_content .button-87 {
   margin: 10px;
   padding: 15px 30px;
   text-align: center;
@@ -10959,10 +10959,10 @@ textarea.form-control-lg {
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-.appointment_form_submit:active, .tests_content_info_button:active, .aboutUs_info_button:active, footer .footerWrap_contact_addressButton:active, .mainSlider_item_content .button-87:active {
+#AllDoctors_Section .all-doctors_card_links .set_meeting:active, .appointment_form_submit:active, .tests_content_info_button:active, .aboutUs_info_button:active, footer .footerWrap_contact_addressButton:active, .mainSlider_item_content .button-87:active {
   transform: scale(0.95);
 }
-.appointment_form_submit:hover, .tests_content_info_button:hover, .aboutUs_info_button:hover, footer .footerWrap_contact_addressButton:hover, .mainSlider_item_content .button-87:hover {
+#AllDoctors_Section .all-doctors_card_links .set_meeting:hover, .appointment_form_submit:hover, .tests_content_info_button:hover, .aboutUs_info_button:hover, footer .footerWrap_contact_addressButton:hover, .mainSlider_item_content .button-87:hover {
   background-position: right center;
   color: #fff;
   text-decoration: none;
@@ -11925,10 +11925,12 @@ footer .copyright a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-height: 340px;
 }
 #Our_Services_Section .services_card_photo img {
-  transition: 0.5s;
+  height: 40vh;
+  transition: 0.3s;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #Our_Services_Section .services_card_photo:hover img {
   border-radius: 20%;
@@ -11951,6 +11953,56 @@ footer .copyright a:hover {
 }
 @media (max-width: 767px) {
   #Our_Services_Section .services {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+#AllDoctors_Section .departments_item {
+  border: 2px solid #444;
+}
+#AllDoctors_Section .slick-current {
+  border: 2px solid #3368c6;
+  color: #3368c6;
+}
+#AllDoctors_Section .all-doctors {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem 3rem;
+}
+#AllDoctors_Section .all-doctors_card {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+#AllDoctors_Section .all-doctors_card_photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#AllDoctors_Section .all-doctors_card_photo img {
+  height: 40vh;
+  transition: 0.3s;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#AllDoctors_Section .all-doctors_card_photo:hover img {
+  border-radius: 20%;
+}
+#AllDoctors_Section .all-doctors_card_name .title_underlined::before {
+  left: -16.5px;
+}
+#AllDoctors_Section .all-doctors_card_position {
+  font-weight: 500;
+}
+#AllDoctors_Section .all-doctors_card_desc {
+  color: #444;
+}
+@media (max-width: 992px) and (min-width: 768px) {
+  #AllDoctors_Section .all-doctors {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 767px) {
+  #AllDoctors_Section .all-doctors {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }

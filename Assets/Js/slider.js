@@ -1,9 +1,11 @@
 
-//  Content
-// 1 Main Slider page/index
-// 2 services slider
-// 3  Doctors slider
-// 4 Core Values Slider / About Us Page
+//  Content              / Index
+// 1 Main Slider         / Index
+// 2 services slider     / Index
+// 3  Doctors slider     / Index
+// 4 Core Values Slider  / About Us 
+// 5 Office slider       / About Us 
+// 6 Departments Slider  / Doctors 
 
 
 
@@ -88,7 +90,7 @@ $('.valuesSlider').slick({
   });
 
 //=================================
-// Office slider
+// 5 Office slider
 //=================================
 
 $(document).ready(function () {
@@ -127,3 +129,22 @@ $(document).ready(function () {
         nextArrow:"<button type='button' class='slick-next slick-button pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
     
     });
+
+
+
+
+
+//=================================
+// 6 Departments Slider  / Doctors 
+//=================================
+
+$('.departmentsSlider').slick({
+  slidesToShow: 7,
+  slidesToScroll: 1,
+  autoplay: false,
+  centerMode:true,
+  autoplaySpeed: 2000,
+  arrows:false,
+  draggabe:true,
+  focusOnSelect: true,
+});
