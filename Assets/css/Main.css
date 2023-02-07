@@ -10933,7 +10933,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-#Contact-form_Section .submitBtn, #Doctor-Details_Section .doctorDetails_info_name .set_meeting, #AllDoctors_Section .all-doctors_card_links .set_meeting, .appointment_form_submit, .tests_content_info_button, .aboutUs_info_button, footer .footerWrap_contact_addressButton, .mainSlider_item_content .button-87 {
+#Product-detail_Section .product-info_button .addToCartBtn, #Contact-form_Section .submitBtn, #Doctor-Details_Section .doctorDetails_info_name .set_meeting, #AllDoctors_Section .all-doctors_card_links .set_meeting, .appointment_form_submit, .tests_content_info_button, .aboutUs_info_button, footer .footerWrap_contact_addressButton, .mainSlider_item_content .button-87 {
   margin: 10px;
   padding: 15px 30px;
   text-align: center;
@@ -10959,10 +10959,10 @@ textarea.form-control-lg {
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-#Contact-form_Section .submitBtn:active, #Doctor-Details_Section .doctorDetails_info_name .set_meeting:active, #AllDoctors_Section .all-doctors_card_links .set_meeting:active, .appointment_form_submit:active, .tests_content_info_button:active, .aboutUs_info_button:active, footer .footerWrap_contact_addressButton:active, .mainSlider_item_content .button-87:active {
+#Product-detail_Section .product-info_button .addToCartBtn:active, #Contact-form_Section .submitBtn:active, #Doctor-Details_Section .doctorDetails_info_name .set_meeting:active, #AllDoctors_Section .all-doctors_card_links .set_meeting:active, .appointment_form_submit:active, .tests_content_info_button:active, .aboutUs_info_button:active, footer .footerWrap_contact_addressButton:active, .mainSlider_item_content .button-87:active {
   transform: scale(0.95);
 }
-#Contact-form_Section .submitBtn:hover, #Doctor-Details_Section .doctorDetails_info_name .set_meeting:hover, #AllDoctors_Section .all-doctors_card_links .set_meeting:hover, .appointment_form_submit:hover, .tests_content_info_button:hover, .aboutUs_info_button:hover, footer .footerWrap_contact_addressButton:hover, .mainSlider_item_content .button-87:hover {
+#Product-detail_Section .product-info_button .addToCartBtn:hover, #Contact-form_Section .submitBtn:hover, #Doctor-Details_Section .doctorDetails_info_name .set_meeting:hover, #AllDoctors_Section .all-doctors_card_links .set_meeting:hover, .appointment_form_submit:hover, .tests_content_info_button:hover, .aboutUs_info_button:hover, footer .footerWrap_contact_addressButton:hover, .mainSlider_item_content .button-87:hover {
   background-position: right center;
   color: #fff;
   text-decoration: none;
@@ -12316,6 +12316,85 @@ footer .copyright a:hover {
   min-height: 155px;
 }
 
+#Product-detail_Section .productMainImgSlider_item {
+  width: 400px;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  -o-object-position: center;
+     object-position: center;
+}
+#Product-detail_Section .slick-track {
+  display: flex;
+  align-items: center;
+}
+#Product-detail_Section .productNavImgSlider_item {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  -o-object-position: center;
+     object-position: center;
+}
+#Product-detail_Section .productNavImgSlider_item img {
+  width: 100%;
+}
+#Product-detail_Section .product-info_header .stars {
+  font-size: 0.7rem;
+}
+#Product-detail_Section .product-info_header p {
+  font-size: 0.9rem;
+}
+#Product-detail_Section .product-info_title {
+  font-weight: 700;
+  line-height: 44px;
+}
+#Product-detail_Section .product-info_price {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1em;
+  font-weight: 700;
+}
+#Product-detail_Section .product-info_table tr:nth-child(odd) {
+  background-color: #f6f6f6;
+}
+#Product-detail_Section .product-info_button_counter {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  white-space: nowrap;
+  height: 51px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  border: 1px solid #d5d5d5;
+}
+#Product-detail_Section .product-info_button_counter span {
+  text-align: center;
+  line-height: 49px;
+  font-size: 24px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: none !important;
+  outline: none !important;
+}
+#Product-detail_Section .product-info_button_counter input {
+  width: 30px;
+  height: 49px;
+  border: 0;
+  border-radius: 0;
+  text-align: center;
+  background-color: transparent;
+}
+#Product-detail_Section .product-info_button .addToCartBtn {
+  background-color: red;
+}
+
 body {
   color: #444;
   font-size: 16px;
@@ -12333,4 +12412,10 @@ ul li {
   background-position: right;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+@media (max-width: 992px) {
+  body {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=Main.css.map */

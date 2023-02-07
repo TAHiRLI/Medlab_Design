@@ -1,0 +1,103 @@
+#Product-detail_Section {
+  .productMainImgSlider {
+    &_item {
+      width: 400px;
+      display: flex;
+      overflow: hidden;
+      justify-content: center;
+      align-items: center;
+      object-position: center;
+    }
+  }
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+
+  .productNavImgSlider {
+    &_item {
+      display: flex;
+      overflow: hidden;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      object-position: center;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .product-info {
+    &_header {
+      .stars {
+        font-size: 0.7rem;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+    }
+    &_title {
+      font-weight: 700;
+      line-height: 44px;
+    }
+    &_price {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 1em;
+      font-weight: 700;
+    }
+    &_table{
+        tr:nth-child(odd){
+            background-color: #f6f6f6;
+        }
+    }
+    &_button{
+        &_counter{
+            width: min-content;
+            white-space: nowrap;
+            
+            height: 51px;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            border-radius: 25px;
+            border: 1px solid #d5d5d5;
+            span{
+                text-align: center;
+                line-height: 49px;
+                font-size: 24px;
+                user-select: none;
+                    border: none !important;
+                    outline: none !important;
+        }
+        input{
+            width: 30px;
+            height: 49px;
+            border: 0;
+            border-radius: 0;
+            text-align: center;
+            background-color: transparent;
+        }
+        
+        }
+       .addToCartBtn{
+            @extend %button_link;
+            background-color: red;
+        }
+    }
+  }
+}
+
+// @media (max-width:992px) {
+//     .product-info {
+//         &_header {
+//           .stars {
+//             font-size: 0.7rem;
+//           }
+//           p {
+//             font-size: 0.9rem;
+//           }
+//         }
+// }

@@ -1,11 +1,12 @@
 
-//  Content              / Index
-// 1 Main Slider         / Index
-// 2 services slider     / Index
-// 3  Doctors slider     / Index
-// 4 Core Values Slider  / About Us 
-// 5 Office slider       / About Us 
-// 6 Departments Slider  / Doctors 
+//  Content                / Index
+// 1 Main Slider           / Index
+// 2 services slider       / Index
+// 3  Doctors slider       / Index
+// 4 Core Values Slider    / About Us 
+// 5 Office slider         / About Us 
+// 6 Departments Slider    / Doctors 
+// 7 Product Images Slider /Details
 
 
 
@@ -147,4 +148,41 @@ $('.departmentsSlider').slick({
   arrows:false,
   draggabe:true,
   focusOnSelect: true,
+});
+
+
+
+
+
+//=================================
+// 7 Product Images Slider /Details
+//=================================
+
+$(document).ready(function () {
+  $('.productNavImgSlider').slick({
+      infinite:true,
+      draggabe:true,
+      touchMove:true,
+      dotClass: 'slick-dots',
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      asNavFor: '.productMainImgSlider',
+      dots: false,
+      centerMode: false,
+      focusOnSelect: true,
+      autoplay: false,
+      arrows:false,
+      autoplaySpeed: 4000,
+
+
+  });
+});
+
+$('.productMainImgSlider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  speed: 200,
+  asNavFor: '.productNavImgSlider'
 });

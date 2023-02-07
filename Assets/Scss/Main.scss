@@ -22,6 +22,7 @@
 @import "Partials/Pages/doctors";
 @import "Partials/Pages/shop";
 @import "Partials/Pages/contact";
+@import "Partials/Pages/product-details";
 
 body {
   color: $font_baseColor;
@@ -39,4 +40,11 @@ ul{
   background-position: right;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+
+@media (max-width:992px) {
+  body{
+    font-size: 14px;
+  }
 }
