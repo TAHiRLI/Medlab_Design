@@ -12328,6 +12328,7 @@ footer .copyright a:hover {
   align-items: center;
   -o-object-position: center;
      object-position: center;
+  border: 1px solid #f0f0f0;
 }
 #Product-detail_Section .slick-track {
   display: flex;
@@ -12341,6 +12342,7 @@ footer .copyright a:hover {
   align-self: center;
   -o-object-position: center;
      object-position: center;
+  border: 1px solid #f0f0f0;
 }
 #Product-detail_Section .productNavImgSlider_item img {
   width: 100%;
@@ -12447,6 +12449,18 @@ footer .copyright a:hover {
 #Product-detail_Section .details #review-form {
   border: 1px solid #ccc;
   background-color: #3368c6;
+}
+
+#Similar-products_Section .similarPrd .product {
+  transition: 0.3s ease;
+  border: 1px solid #f0f0f0;
+}
+#Similar-products_Section .similarPrd .product:hover {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+}
+#Similar-products_Section .similarPrd .product-addToCart {
+  border: 2px solid #3368c6;
+  transition: 0.3s;
 }
 
 body {

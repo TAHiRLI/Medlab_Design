@@ -1,13 +1,13 @@
 
-//  Content                / Index
-// 1 Main Slider           / Index
-// 2 services slider       / Index
-// 3  Doctors slider       / Index
-// 4 Core Values Slider    / About Us 
-// 5 Office slider         / About Us 
-// 6 Departments Slider    / Doctors 
-// 7 Product Images Slider /Details
-
+//  Content                           / Index
+// 1 Main Slider                      / Index
+// 2 services slider                  / Index
+// 3  Doctors slider                  / Index
+// 4 Core Values Slider               / About Us 
+// 5 Office slider                    / About Us 
+// 6 Departments Slider               / Doctors 
+// 7 Product Images Slider            /Details
+// 8 Similar Products Slider          / Product-Details
 
 
 
@@ -173,6 +173,18 @@ $(document).ready(function () {
       autoplay: false,
       arrows:false,
       autoplaySpeed: 4000,
+      
+  responsive: [
+    
+    
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 4,
+      }
+    }
+  
+  ]
 
 
   });
@@ -186,3 +198,45 @@ $('.productMainImgSlider').slick({
   speed: 200,
   asNavFor: '.productNavImgSlider'
 });
+
+
+//=================================
+// 8 Similar Products Slider / Product-Details
+//=================================
+
+
+
+$('.similarPrdSlider').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  centerMode:false,
+  autoplaySpeed: 4000,
+  arrows:false,
+  draggabe:true,
+  focusOnSelect: false,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+      }
+    }
+    ,
+    {
+      breakpoint: 560,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+  
+  ]
+});
+
+
