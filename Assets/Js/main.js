@@ -1,4 +1,4 @@
-//  add to cort quentity
+//  add to cort quantity
 
 $(".increment").on("click", ()=>{
     $(".add-count").val(parseInt($(".add-count").val())+1)
@@ -7,10 +7,8 @@ $(".increment").on("click", ()=>{
 
 $(".decrement").on("click", ()=>{
     let count =parseInt($(".add-count").val())
-    if(count >=1){
-        
+    if(count >=1)
         $(".add-count").val(count -1)
-    }
-
-    
 })
+
+

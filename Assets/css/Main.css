@@ -10933,7 +10933,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-#Product-detail_Section .product-info_button .addToCartBtn, #Contact-form_Section .submitBtn, #Doctor-Details_Section .doctorDetails_info_name .set_meeting, #AllDoctors_Section .all-doctors_card_links .set_meeting, .appointment_form_submit, .tests_content_info_button, .aboutUs_info_button, footer .footerWrap_contact_addressButton, .mainSlider_item_content .button-87 {
+#Product-detail_Section .details .loadmore-btn, #Product-detail_Section .product-info_button .addToCartBtn, #Contact-form_Section .submitBtn, #Doctor-Details_Section .doctorDetails_info_name .set_meeting, #AllDoctors_Section .all-doctors_card_links .set_meeting, .appointment_form_submit, .tests_content_info_button, .aboutUs_info_button, footer .footerWrap_contact_addressButton, .mainSlider_item_content .button-87 {
   margin: 10px;
   padding: 15px 30px;
   text-align: center;
@@ -10959,10 +10959,10 @@ textarea.form-control-lg {
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-#Product-detail_Section .product-info_button .addToCartBtn:active, #Contact-form_Section .submitBtn:active, #Doctor-Details_Section .doctorDetails_info_name .set_meeting:active, #AllDoctors_Section .all-doctors_card_links .set_meeting:active, .appointment_form_submit:active, .tests_content_info_button:active, .aboutUs_info_button:active, footer .footerWrap_contact_addressButton:active, .mainSlider_item_content .button-87:active {
+#Product-detail_Section .details .loadmore-btn:active, #Product-detail_Section .product-info_button .addToCartBtn:active, #Contact-form_Section .submitBtn:active, #Doctor-Details_Section .doctorDetails_info_name .set_meeting:active, #AllDoctors_Section .all-doctors_card_links .set_meeting:active, .appointment_form_submit:active, .tests_content_info_button:active, .aboutUs_info_button:active, footer .footerWrap_contact_addressButton:active, .mainSlider_item_content .button-87:active {
   transform: scale(0.95);
 }
-#Product-detail_Section .product-info_button .addToCartBtn:hover, #Contact-form_Section .submitBtn:hover, #Doctor-Details_Section .doctorDetails_info_name .set_meeting:hover, #AllDoctors_Section .all-doctors_card_links .set_meeting:hover, .appointment_form_submit:hover, .tests_content_info_button:hover, .aboutUs_info_button:hover, footer .footerWrap_contact_addressButton:hover, .mainSlider_item_content .button-87:hover {
+#Product-detail_Section .details .loadmore-btn:hover, #Product-detail_Section .product-info_button .addToCartBtn:hover, #Contact-form_Section .submitBtn:hover, #Doctor-Details_Section .doctorDetails_info_name .set_meeting:hover, #AllDoctors_Section .all-doctors_card_links .set_meeting:hover, .appointment_form_submit:hover, .tests_content_info_button:hover, .aboutUs_info_button:hover, footer .footerWrap_contact_addressButton:hover, .mainSlider_item_content .button-87:hover {
   background-position: right center;
   color: #fff;
   text-decoration: none;
@@ -11290,6 +11290,10 @@ footer .footerWrap_contact_title::before, footer .footerWrap_blogs_title::before
 
 .select2-container .select2-dropdown .select2-results ul .select2-results__option--highlighted[aria-selected] {
   background-color: #3498db;
+}
+
+.stars {
+  font-size: 0.7rem;
 }
 
 .navbar {
@@ -12341,9 +12345,6 @@ footer .copyright a:hover {
 #Product-detail_Section .productNavImgSlider_item img {
   width: 100%;
 }
-#Product-detail_Section .product-info_header .stars {
-  font-size: 0.7rem;
-}
 #Product-detail_Section .product-info_header p {
   font-size: 0.9rem;
 }
@@ -12393,6 +12394,59 @@ footer .copyright a:hover {
 }
 #Product-detail_Section .product-info_button .addToCartBtn {
   background-color: red;
+}
+#Product-detail_Section .details_tab-btn {
+  margin: 0;
+  padding: 14px 24px !important;
+  cursor: pointer;
+  text-shadow: none;
+  font-size: 14px;
+  transition: 0.3s ease;
+  font-weight: 600;
+  line-height: 19px;
+  padding: 14px 16px;
+  color: #787878;
+  border: 1px solid #f0f0f0;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+}
+#Product-detail_Section .details_tab-btn:hover {
+  background-color: #f8f8f8;
+}
+#Product-detail_Section .details_tab-btn.active {
+  border-bottom-color: #3368c6;
+  color: #3368c6;
+  box-shadow: none;
+  background-color: #fff;
+}
+#Product-detail_Section .details .post-review .photo {
+  width: 38px;
+  height: 38px;
+}
+#Product-detail_Section .details .post-review .photo img {
+  border-radius: 50%;
+}
+#Product-detail_Section .details input {
+  font-size: 0.9rem;
+  padding-right: 150px;
+}
+#Product-detail_Section .details .submitBtn {
+  position: absolute;
+  border: none;
+  outline: none;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#Product-detail_Section .details .star-rating {
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#Product-detail_Section .details #review-form {
+  border: 1px solid #ccc;
+  background-color: #3368c6;
 }
 
 body {

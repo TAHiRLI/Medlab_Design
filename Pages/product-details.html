@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Magnify js -->
+    <!-- Magnify js / requires -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/magnify/2.3.3/css/magnify.min.css"
@@ -9,11 +9,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- Slick css -->
+    <!-- Slick css / requires js-->
     <link
       rel="stylesheet"
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <!-- Star rating /  requires js -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/star-rating-svg@3.5.0/src/css/star-rating-svg.min.css"
+      rel="stylesheet"
     />
 
     <meta charset="UTF-8" />
@@ -31,7 +37,7 @@
     </div>
 
     <main>
-      <section id="Product-detail_Section" class="py-5 ">
+      <section id="Product-detail_Section" class="py-5">
         <div class="container">
           <div class="row product-block">
             <div class="col-md-6">
@@ -148,11 +154,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6  product-info px-4">
-              <div
-                class="product-info_header mt-3"
-              >
-                <span class="stars col-2">
+            <div class="col-md-6 product-info px-4">
+              <div class="product-info_header mt-3">
+                <span class="stars col-2 text-base">
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
@@ -172,43 +176,219 @@
                   <tbody>
                     <tr>
                       <td class="py-3">
-                        <i class="fa-sharp fa-solid fa-check text-base mx-2"></i>
-                        Category</td>
+                        <i
+                          class="fa-sharp fa-solid fa-check text-base mx-2"
+                        ></i>
+                        Category
+                      </td>
                       <td class="py-3">Painkiller</td>
                     </tr>
                     <tr>
                       <td class="py-3">
-                        <i class="fa-sharp fa-solid fa-check text-base mx-2"></i>
-                        Stock Status</td>
+                        <i
+                          class="fa-sharp fa-solid fa-check text-base mx-2"
+                        ></i>
+                        Stock Status
+                      </td>
                       <td class="py-3">In Stock</td>
                     </tr>
                     <tr>
-                        <td class="py-3">
-                            <i class="fa-sharp fa-solid fa-check text-base mx-2"></i>
-                            Quantity Sold:</td>
-                        <td class="py-3">Sold Individually</td>
-                      </tr>
+                      <td class="py-3">
+                        <i
+                          class="fa-sharp fa-solid fa-check text-base mx-2"
+                        ></i>
+                        Quantity Sold:
+                      </td>
+                      <td class="py-3">Sold Individually</td>
+                    </tr>
                     <tr>
                       <td class="py-3">
-                        <i class="fa-sharp fa-solid fa-check text-base mx-2"></i>
-                        Seller</td>
+                        <i
+                          class="fa-sharp fa-solid fa-check text-base mx-2"
+                        ></i>
+                        Seller
+                      </td>
                       <td class="py-3">Front Company LTD 2421</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
 
-              <div class="product-info_button row align-items-center justify-content-evenly justify-content-lg-center  my-1  px-2">
-                <div class="product-info_button_counter rounded-pill ">
-                    <span class=" decrement counter-btn  m-0 pointer btn link-hover ">-</span>
-                    <input type="number" value="0" class="add-count"> 
-                    <span class=" increment counter-btn  m-0  pointer btn link-hover">+</span>
-
+              <div
+                class="product-info_button row align-items-center justify-content-evenly justify-content-lg-center my-1 px-2"
+              >
+                <div class="product-info_button_counter rounded-pill">
+                  <span class="decrement counter-btn m-0 pointer btn link-hover"
+                    >-</span
+                  >
+                  <input type="number" value="0" class="add-count" />
+                  <span class="increment counter-btn m-0 pointer btn link-hover"
+                    >+</span
+                  >
                 </div>
-                <button class="addToCartBtn rounded-pill m-0 ms-lg-5 m-1"><i class="fa-solid fa-bag-shopping mx-2"></i>Add to cart</button>
+                <button class="addToCartBtn rounded-pill m-0 ms-lg-5 m-1">
+                  <i class="fa-solid fa-bag-shopping mx-2"></i>Add to cart
+                </button>
               </div>
+            </div>
+          </div>
 
+          <div class="details  py-5 mt-3">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button
+                class="details_tab-btn"
+                id="desc-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#tab-desc"
+                type="button"
+                role="tab"
+                aria-controls="tab-desc"
+                aria-selected="true"
+              >
+                Description
+              </button>
+              <button
+                class="details_tab-btn active"
+                id="review-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#tab-review"
+                type="button"
+                role="tab"
+                aria-controls="tab-review"
+                aria-selected="false"
+              >
+                Reviews (2)
+              </button>
+            </div>
 
+            <div class="tab-content p-md-5 p-3" id="nav-tabContent">
+              <!-- Description -->
+              <div
+                class="tab-pane details_description fade"
+                id="tab-desc"
+                role="tabpanel"
+                aria-labelledby="desc-tab"
+                tabindex="0"
+              >
+                <p>
+                  <span class="h4"> Super Saver Tube</span>
+                  <br /><br />
+
+                  Order the Dental Expert activated charcoal toothpaste and get
+                  more for less with our super-saver tube. Get maximum value for
+                  your money and whiten your teeth with total confidence. At
+                  Dental Expert, we believe in providing the highest possible
+                  value to our customers at all times.
+                  <br /><br />
+
+                  <span class="h4">100% Safe & Natural</span>
+                  <br /><br />
+
+                  Get whiter teeth and improved oral health today using bamboo
+                  charcoal and other all-natural ingredients whose value and
+                  benefits have been acknowledged for years. Dental Expert teeth
+                  whitening toothpaste hasno artificial colors or chemicals, and
+                  is 100% safe for use by adults.
+                </p>
+              </div>
+              <!-- Reviews -->
+
+              <div
+                class="tab-pane details_reviews fade show active "
+                id="tab-review"
+                role="tabpanel"
+                aria-labelledby="review-tab"
+                tabindex="0"
+              >
+                <div class="reviews ">
+                  <!-- review -->
+                  <div class="reviews_item  my-2">
+                    <p class="reviews_item_username h6 mb-0">Tahir Tahirli</p>
+                    <span class="stars col-2 text-base">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <p class="reviews_item_text">
+                      Excellent clinic which has looked after my families dental
+                      healthcare for many years. Last year I received private
+                      treatment for a tooth implant and the whole process was
+                      professionally managed and delivered.
+                    </p>
+                  </div>
+
+                  <!-- review -->
+                  <div class="reviews_item  my-2">
+                    <p class="reviews_item_username h6 mb-0">Tahir Tahirli</p>
+                    <span class="stars col-2 text-base">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <p class="reviews_item_text">
+                      Excellent clinic which has looked after my families dental
+                      healthcare for many years. Last year I received private
+                      treatment for a tooth implant and the whole process was
+                      professionally managed and delivered.
+                    </p>
+                  </div>
+                  <!-- review -->
+                  <div class="reviews_item  my-2">
+                    <p class="reviews_item_username h6 mb-0">Tahir Tahirli</p>
+                    <span class="stars col-2 text-base">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <p class="reviews_item_text">
+                      Excellent clinic which has looked after my families dental
+                      healthcare for many years. Last year I received private
+                      treatment for a tooth implant and the whole process was
+                      professionally managed and delivered.
+                    </p>
+                  </div>
+
+                  <div>
+                      <button class="loadmore-btn m-auto mt-5 rounded-pill py-2 text-center">Load More</button>
+                  </div>
+
+                  <!-- End -->
+                </div>
+
+                <div class="post-review mt-5">
+                  <form
+                    id="review-form"
+                    class="d-flex p-1 rounded-pill align-items-center mt-5"
+                  >
+                    <div class="photo d-flex align-items-center">
+                      <img
+                        src="/Assets/Uploads/Users/DEFAULT-USER.jpg"
+                        alt=""
+                        class="w-100"
+                      />
+                    </div>
+                    <div class="col ms-1 position-relative">
+                      <input
+                        type="text"
+                        class="rounded-pill form-control "
+                        placeholder=" Review as Tahir Tahirli"
+                      />
+                      <input type="hidden" id="reviewRate" value="0" />
+                <div class="star-rating text-center"></div>
+
+                      <button class="submitBtn btn" type="submit">
+                        <i class="fa-solid fa-paper-plane"></i>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -230,7 +410,7 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    <!-- Slick Slide -->
+    <!-- Slick Slide /  requires css -->
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
@@ -241,6 +421,14 @@
       src="https://kit.fontawesome.com/f0bcda735f.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Bootsrap js -->
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map"></script>
+
+    <!-- Star rating /  requires css -->
+    <script src="
+    https://cdn.jsdelivr.net/npm/star-rating-svg@3.5.0/dist/jquery.star-rating-svg.min.js
+    "></script>
 
     <!-- ========================= Custom =============================== -->
 
@@ -249,12 +437,10 @@
     <!-- Zoom js -->
     <script src="/Assets/Js/zoom.js"></script>
 
-
-
-
+    <!-- Star Rating Setting -->
+    <script src="/Assets/Js/star-rating.js"></script>
 
     <!-- MAIN Js -->
     <script src="/Assets/Js/main.js"></script>
-
-</body>
+  </body>
 </html>
