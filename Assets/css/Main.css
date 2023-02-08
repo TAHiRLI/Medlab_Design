@@ -10933,7 +10933,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-#login-body .submit-btn, #Product-detail_Section .details .loadmore-btn, #Product-detail_Section .product-info_button .addToCartBtn, #Contact-form_Section .submitBtn, #Doctor-Details_Section .doctorDetails_info_name .set_meeting, #AllDoctors_Section .all-doctors_card_links .set_meeting, .appointment_form_submit, .tests_content_info_button, .aboutUs_info_button, footer .footerWrap_contact_addressButton, .mainSlider_item_content .button-87 {
+#All-Blogs_Section .blogs_item .read-more-btn, #login-body .submit-btn, #Product-detail_Section .details .loadmore-btn, #Product-detail_Section .product-info_button .addToCartBtn, #Contact-form_Section .submitBtn, #Doctor-Details_Section .doctorDetails_info_name .set_meeting, #AllDoctors_Section .all-doctors_card_links .set_meeting, .appointment_form_submit, .tests_content_info_button, .aboutUs_info_button, footer .footerWrap_contact_addressButton, .mainSlider_item_content .button-87 {
   margin: 10px;
   padding: 15px 30px;
   text-align: center;
@@ -10959,10 +10959,10 @@ textarea.form-control-lg {
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-#login-body .submit-btn:active, #Product-detail_Section .details .loadmore-btn:active, #Product-detail_Section .product-info_button .addToCartBtn:active, #Contact-form_Section .submitBtn:active, #Doctor-Details_Section .doctorDetails_info_name .set_meeting:active, #AllDoctors_Section .all-doctors_card_links .set_meeting:active, .appointment_form_submit:active, .tests_content_info_button:active, .aboutUs_info_button:active, footer .footerWrap_contact_addressButton:active, .mainSlider_item_content .button-87:active {
+#All-Blogs_Section .blogs_item .read-more-btn:active, #login-body .submit-btn:active, #Product-detail_Section .details .loadmore-btn:active, #Product-detail_Section .product-info_button .addToCartBtn:active, #Contact-form_Section .submitBtn:active, #Doctor-Details_Section .doctorDetails_info_name .set_meeting:active, #AllDoctors_Section .all-doctors_card_links .set_meeting:active, .appointment_form_submit:active, .tests_content_info_button:active, .aboutUs_info_button:active, footer .footerWrap_contact_addressButton:active, .mainSlider_item_content .button-87:active {
   transform: scale(0.95);
 }
-#login-body .submit-btn:hover, #Product-detail_Section .details .loadmore-btn:hover, #Product-detail_Section .product-info_button .addToCartBtn:hover, #Contact-form_Section .submitBtn:hover, #Doctor-Details_Section .doctorDetails_info_name .set_meeting:hover, #AllDoctors_Section .all-doctors_card_links .set_meeting:hover, .appointment_form_submit:hover, .tests_content_info_button:hover, .aboutUs_info_button:hover, footer .footerWrap_contact_addressButton:hover, .mainSlider_item_content .button-87:hover {
+#All-Blogs_Section .blogs_item .read-more-btn:hover, #login-body .submit-btn:hover, #Product-detail_Section .details .loadmore-btn:hover, #Product-detail_Section .product-info_button .addToCartBtn:hover, #Contact-form_Section .submitBtn:hover, #Doctor-Details_Section .doctorDetails_info_name .set_meeting:hover, #AllDoctors_Section .all-doctors_card_links .set_meeting:hover, .appointment_form_submit:hover, .tests_content_info_button:hover, .aboutUs_info_button:hover, footer .footerWrap_contact_addressButton:hover, .mainSlider_item_content .button-87:hover {
   background-position: right center;
   color: #fff;
   text-decoration: none;
@@ -11315,6 +11315,10 @@ footer .footerWrap_contact_title::before, footer .footerWrap_blogs_title::before
 }
 .or::before {
   left: 0;
+}
+
+.border-gray {
+  border: 1px solid #ccc;
 }
 
 .navbar {
@@ -11989,20 +11993,18 @@ footer .copyright a:hover {
   font-size: 0.9rem;
 }
 
-#Blogs_Seciton {
+#Blogs_Seciton, .doctorDetails_info_blogs {
   background: rgb(248, 250, 248);
   background: linear-gradient(90deg, rgb(248, 250, 248) 0%, rgb(255, 255, 255) 46%, rgba(255, 255, 255, 0.137692577) 47%, rgba(255, 255, 255, 0) 89%);
 }
-
-.gridBlogs {
+#Blogs_Seciton .gridBlogs, .doctorDetails_info_blogs .gridBlogs {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
-.blogs .sectionTitle .double-title {
+#Blogs_Seciton .blogs .sectionTitle .double-title, .doctorDetails_info_blogs .blogs .sectionTitle .double-title {
   color: #f7f9fb;
 }
-.blogs .sectionTitle .double-title::after {
+#Blogs_Seciton .blogs .sectionTitle .double-title::after, .doctorDetails_info_blogs .blogs .sectionTitle .double-title::after {
   position: absolute;
   z-index: -1;
   right: 0;
@@ -12016,23 +12018,23 @@ footer .copyright a:hover {
   left: 0%;
   transform: translate(0%, -50%);
 }
-.blogs_item_photo {
+#Blogs_Seciton .blogs_item_photo, .doctorDetails_info_blogs .blogs_item_photo {
   width: 140px;
   height: 140px;
 }
-.blogs_item_photo img {
+#Blogs_Seciton .blogs_item_photo img, .doctorDetails_info_blogs .blogs_item_photo img {
   width: 100%;
 }
-.blogs_item_info_date {
+#Blogs_Seciton .blogs_item_info_date, .doctorDetails_info_blogs .blogs_item_info_date {
   color: #3368c6;
   font-weight: 500;
 }
-.blogs_item_info_title a {
+#Blogs_Seciton .blogs_item_info_title a, .doctorDetails_info_blogs .blogs_item_info_title a {
   font-weight: 600;
   transition: 0.3s;
   color: #444;
 }
-.blogs_item_info_title a:hover {
+#Blogs_Seciton .blogs_item_info_title a:hover, .doctorDetails_info_blogs .blogs_item_info_title a:hover {
   color: #3368c6;
 }
 
@@ -12526,6 +12528,28 @@ footer .copyright a:hover {
 #login-body .social a {
   border: 1px solid #ccc;
   font-size: 1rem;
+}
+
+#All-Blogs_Section .blogs_item_photo img {
+  width: 100%;
+}
+#All-Blogs_Section .blogs_item .post-date {
+  background-color: #f5f6f7;
+  color: #424242;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+#All-Blogs_Section .blogs_item .post-date .day {
+  line-height: 1rem;
+}
+#All-Blogs_Section .recent-blogs_item_photo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+#All-Blogs_Section .post-small-info {
+  font-size: 0.9rem;
 }
 
 body {
