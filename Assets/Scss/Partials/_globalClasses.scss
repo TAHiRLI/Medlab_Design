@@ -325,3 +325,26 @@
 .stars {
   font-size: 0.7rem;
 }
+
+// or option in the forms
+.or{
+  position: relative;
+  letter-spacing: 1.5px;
+  font-style: 0.5rem;
+  &::before , &::after{
+      content: '';
+      width: 42%;
+      height: 1px;
+      background-color: #ccc;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+  }
+  &::after{
+      right: 0;
+  }
+  &::before{
+      left: 0;
+      
+  }
+}
