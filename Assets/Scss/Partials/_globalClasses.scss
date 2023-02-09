@@ -352,3 +352,12 @@
 .border-gray{
   border: 1px solid #ccc;
 }
+// button
+.my-custom-btn{
+  @extend %button_link;
+}
+
+// item shadow
+.item-shadow-hover{
+  box-shadow: 0 0 25px rgb(0 0 0 / 10%);
+}

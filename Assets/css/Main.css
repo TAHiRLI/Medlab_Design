@@ -10933,7 +10933,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-#All-Blogs_Section .blogs_item .read-more-btn, #login-body .submit-btn, #Product-detail_Section .details .loadmore-btn, #Product-detail_Section .product-info_button .addToCartBtn, #Contact-form_Section .submitBtn, #Doctor-Details_Section .doctorDetails_info_name .set_meeting, #AllDoctors_Section .all-doctors_card_links .set_meeting, .appointment_form_submit, .tests_content_info_button, .aboutUs_info_button, footer .footerWrap_contact_addressButton, .mainSlider_item_content .button-87 {
+#All-Blogs_Section .blogs_item .read-more-btn, #login-body .submit-btn, #Product-detail_Section .details .loadmore-btn, #Product-detail_Section .product-info_button .addToCartBtn, #Contact-form_Section .submitBtn, #Doctor-Details_Section .doctorDetails_info_name .set_meeting, #AllDoctors_Section .all-doctors_card_links .set_meeting, .appointment_form_submit, .tests_content_info_button, .aboutUs_info_button, footer .footerWrap_contact_addressButton, .mainSlider_item_content .button-87, .my-custom-btn {
   margin: 10px;
   padding: 15px 30px;
   text-align: center;
@@ -10959,10 +10959,10 @@ textarea.form-control-lg {
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-#All-Blogs_Section .blogs_item .read-more-btn:active, #login-body .submit-btn:active, #Product-detail_Section .details .loadmore-btn:active, #Product-detail_Section .product-info_button .addToCartBtn:active, #Contact-form_Section .submitBtn:active, #Doctor-Details_Section .doctorDetails_info_name .set_meeting:active, #AllDoctors_Section .all-doctors_card_links .set_meeting:active, .appointment_form_submit:active, .tests_content_info_button:active, .aboutUs_info_button:active, footer .footerWrap_contact_addressButton:active, .mainSlider_item_content .button-87:active {
+#All-Blogs_Section .blogs_item .read-more-btn:active, #login-body .submit-btn:active, #Product-detail_Section .details .loadmore-btn:active, #Product-detail_Section .product-info_button .addToCartBtn:active, #Contact-form_Section .submitBtn:active, #Doctor-Details_Section .doctorDetails_info_name .set_meeting:active, #AllDoctors_Section .all-doctors_card_links .set_meeting:active, .appointment_form_submit:active, .tests_content_info_button:active, .aboutUs_info_button:active, footer .footerWrap_contact_addressButton:active, .mainSlider_item_content .button-87:active, .my-custom-btn:active {
   transform: scale(0.95);
 }
-#All-Blogs_Section .blogs_item .read-more-btn:hover, #login-body .submit-btn:hover, #Product-detail_Section .details .loadmore-btn:hover, #Product-detail_Section .product-info_button .addToCartBtn:hover, #Contact-form_Section .submitBtn:hover, #Doctor-Details_Section .doctorDetails_info_name .set_meeting:hover, #AllDoctors_Section .all-doctors_card_links .set_meeting:hover, .appointment_form_submit:hover, .tests_content_info_button:hover, .aboutUs_info_button:hover, footer .footerWrap_contact_addressButton:hover, .mainSlider_item_content .button-87:hover {
+#All-Blogs_Section .blogs_item .read-more-btn:hover, #login-body .submit-btn:hover, #Product-detail_Section .details .loadmore-btn:hover, #Product-detail_Section .product-info_button .addToCartBtn:hover, #Contact-form_Section .submitBtn:hover, #Doctor-Details_Section .doctorDetails_info_name .set_meeting:hover, #AllDoctors_Section .all-doctors_card_links .set_meeting:hover, .appointment_form_submit:hover, .tests_content_info_button:hover, .aboutUs_info_button:hover, footer .footerWrap_contact_addressButton:hover, .mainSlider_item_content .button-87:hover, .my-custom-btn:hover {
   background-position: right center;
   color: #fff;
   text-decoration: none;
@@ -11319,6 +11319,10 @@ footer .footerWrap_contact_title::before, footer .footerWrap_blogs_title::before
 
 .border-gray {
   border: 1px solid #ccc;
+}
+
+.item-shadow-hover {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
@@ -12410,12 +12414,17 @@ footer .copyright a:hover {
   outline: none !important;
 }
 #Product-detail_Section .product-info_button_counter input {
-  width: 30px;
+  width: 40px;
   height: 49px;
   border: 0;
   border-radius: 0;
   text-align: center;
   background-color: transparent;
+}
+#Product-detail_Section .product-info_button_counter input[type=number]::-webkit-inner-spin-button,
+#Product-detail_Section .product-info_button_counter input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 #Product-detail_Section .product-info_button .addToCartBtn {
   background-color: red;
@@ -12552,6 +12561,70 @@ footer .copyright a:hover {
   font-size: 0.9rem;
 }
 
+.cart-product-price {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.cart-product_counter {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  white-space: nowrap;
+  height: 51px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  border: 1px solid #d5d5d5;
+}
+.cart-product_counter span {
+  text-align: center;
+  line-height: 49px;
+  font-size: 24px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: none !important;
+  outline: none !important;
+}
+.cart-product_counter input {
+  width: 40px;
+  height: 49px;
+  border: 0;
+  border-radius: 0;
+  text-align: center;
+  background-color: transparent;
+}
+.cart-product_counter input[type=number]::-webkit-inner-spin-button,
+.cart-product_counter input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.cart-product_item {
+  border: 1px solid #ccc;
+}
+.cart-product_item .remove-btn {
+  top: 10px;
+  right: 10px;
+  display: block;
+}
+.cart-product_item_photo {
+  overflow: hidden;
+  max-height: 200px;
+}
+.cart-product_item_photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .cart-product_photo {
+    max-height: 250px;
+  }
+}
 body {
   color: #444;
   font-size: 16px;

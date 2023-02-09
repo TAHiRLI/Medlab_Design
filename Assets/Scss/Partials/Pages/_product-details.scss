@@ -71,12 +71,17 @@
           outline: none !important;
         }
         input {
-          width: 30px;
+          width: 40px;
           height: 49px;
           border: 0;
           border-radius: 0;
           text-align: center;
           background-color: transparent;
+        }
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
         }
       }
       .addToCartBtn {
@@ -149,10 +154,10 @@
 #Similar-products_Section {
   .similarPrd {
     .product {
-        transition: 0.3s ease;
-        &:hover{
-            box-shadow: 0 0 25px rgb(0 0 0 / 10%);
-          }
+      transition: 0.3s ease;
+      &:hover {
+        box-shadow: 0 0 25px rgb(0 0 0 / 10%);
+      }
       border: 1px solid #f0f0f0;
 
       &-addToCart {
