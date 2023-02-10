@@ -10933,7 +10933,8 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-#All-Blogs_Section .blogs_item .read-more-btn, #login-body .submit-btn, #Product-detail_Section .details .loadmore-btn, #Product-detail_Section .product-info_button .addToCartBtn, #Contact-form_Section .submitBtn, #Doctor-Details_Section .doctorDetails_info_name .set_meeting, #AllDoctors_Section .all-doctors_card_links .set_meeting, .appointment_form_submit, .tests_content_info_button, .aboutUs_info_button, footer .footerWrap_contact_addressButton, .mainSlider_item_content .button-87, .my-custom-btn {
+#User-profile_Section .cancel-btn, #User-profile_Section .download-btn,
+#User-profile_Section .call-btn, #All-Blogs_Section .blogs_item .read-more-btn, #login-body .submit-btn, #Product-detail_Section .details .loadmore-btn, #Product-detail_Section .product-info_button .addToCartBtn, #Contact-form_Section .submitBtn, #Doctor-Details_Section .doctorDetails_info_name .set_meeting, #AllDoctors_Section .all-doctors_card_links .set_meeting, .appointment_form_submit, .tests_content_info_button, .aboutUs_info_button, footer .footerWrap_contact_addressButton, .mainSlider_item_content .button-87, .my-custom-btn {
   margin: 10px;
   padding: 15px 30px;
   text-align: center;
@@ -10959,10 +10960,12 @@ textarea.form-control-lg {
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-#All-Blogs_Section .blogs_item .read-more-btn:active, #login-body .submit-btn:active, #Product-detail_Section .details .loadmore-btn:active, #Product-detail_Section .product-info_button .addToCartBtn:active, #Contact-form_Section .submitBtn:active, #Doctor-Details_Section .doctorDetails_info_name .set_meeting:active, #AllDoctors_Section .all-doctors_card_links .set_meeting:active, .appointment_form_submit:active, .tests_content_info_button:active, .aboutUs_info_button:active, footer .footerWrap_contact_addressButton:active, .mainSlider_item_content .button-87:active, .my-custom-btn:active {
+#User-profile_Section .cancel-btn:active, #User-profile_Section .download-btn:active,
+#User-profile_Section .call-btn:active, #All-Blogs_Section .blogs_item .read-more-btn:active, #login-body .submit-btn:active, #Product-detail_Section .details .loadmore-btn:active, #Product-detail_Section .product-info_button .addToCartBtn:active, #Contact-form_Section .submitBtn:active, #Doctor-Details_Section .doctorDetails_info_name .set_meeting:active, #AllDoctors_Section .all-doctors_card_links .set_meeting:active, .appointment_form_submit:active, .tests_content_info_button:active, .aboutUs_info_button:active, footer .footerWrap_contact_addressButton:active, .mainSlider_item_content .button-87:active, .my-custom-btn:active {
   transform: scale(0.95);
 }
-#All-Blogs_Section .blogs_item .read-more-btn:hover, #login-body .submit-btn:hover, #Product-detail_Section .details .loadmore-btn:hover, #Product-detail_Section .product-info_button .addToCartBtn:hover, #Contact-form_Section .submitBtn:hover, #Doctor-Details_Section .doctorDetails_info_name .set_meeting:hover, #AllDoctors_Section .all-doctors_card_links .set_meeting:hover, .appointment_form_submit:hover, .tests_content_info_button:hover, .aboutUs_info_button:hover, footer .footerWrap_contact_addressButton:hover, .mainSlider_item_content .button-87:hover, .my-custom-btn:hover {
+#User-profile_Section .cancel-btn:hover, #User-profile_Section .download-btn:hover,
+#User-profile_Section .call-btn:hover, #All-Blogs_Section .blogs_item .read-more-btn:hover, #login-body .submit-btn:hover, #Product-detail_Section .details .loadmore-btn:hover, #Product-detail_Section .product-info_button .addToCartBtn:hover, #Contact-form_Section .submitBtn:hover, #Doctor-Details_Section .doctorDetails_info_name .set_meeting:hover, #AllDoctors_Section .all-doctors_card_links .set_meeting:hover, .appointment_form_submit:hover, .tests_content_info_button:hover, .aboutUs_info_button:hover, footer .footerWrap_contact_addressButton:hover, .mainSlider_item_content .button-87:hover, .my-custom-btn:hover {
   background-position: right center;
   color: #fff;
   text-decoration: none;
@@ -11323,6 +11326,18 @@ footer .footerWrap_contact_title::before, footer .footerWrap_blogs_title::before
 
 .item-shadow-hover {
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+}
+
+.position-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.position-top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .navbar {
@@ -12625,6 +12640,166 @@ footer .copyright a:hover {
     max-height: 250px;
   }
 }
+#User-profile_Section .user-greeting {
+  background: #085078; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #85d8ce, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 30px;
+}
+#User-profile_Section .user-greeting_user-photo {
+  width: 100px;
+  height: 100px;
+  bottom: 0;
+  left: 3rem;
+  transform: translate(0, 50%);
+}
+#User-profile_Section .user-greeting_user-photo img {
+  border-radius: 50%;
+  border: 6px solid #085078;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: covre;
+     object-fit: covre;
+}
+#User-profile_Section .tab-btn {
+  margin: 0;
+  padding: 14px 0;
+  width: 100%;
+  cursor: pointer;
+  text-shadow: none;
+  font-size: 14px;
+  transition: 0.3s ease;
+  font-weight: 600;
+  line-height: 19px;
+  padding: 14px 16px;
+  color: #787878;
+  border: 1px solid #f0f0f0;
+  border-bottom: 2px solid #ccc;
+  border-radius: 0;
+}
+#User-profile_Section .tab-btn:hover {
+  background-color: #f8f8f8;
+}
+#User-profile_Section .tab-btn.active {
+  border-bottom-color: #3368c6;
+  color: #3368c6;
+  box-shadow: none;
+  background-color: #fff;
+}
+#User-profile_Section .tab-content {
+  background: #085078; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #85d8ce, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#User-profile_Section .tab-content-profile .save-btn {
+  background-image: linear-gradient(45deg, green 0%, rgba(186, 245, 22, 0.7607843137) 51%, green 100%);
+}
+#User-profile_Section .tab-content-profile .user-photo {
+  width: 100px;
+  height: 100px;
+}
+#User-profile_Section .tab-content-profile .user-photo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #3368c6;
+}
+#User-profile_Section .tab-content-profile .user-photo i.add-photo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #3368c6;
+}
+#User-profile_Section .tab-content-profile input {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 0.9rem;
+  min-width: 240px;
+}
+#User-profile_Section .download-btn,
+#User-profile_Section .call-btn {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  color: white;
+  padding: 10px 14px !important;
+}
+#User-profile_Section .download-btn i,
+#User-profile_Section .call-btn i {
+  font-size: 1.5rem;
+}
+#User-profile_Section .download-btn[disabled],
+#User-profile_Section .call-btn[disabled] {
+  color: #787878;
+}
+#User-profile_Section .cancel-btn {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  color: white;
+  padding: 10px 14px !important;
+  background-image: linear-gradient(45deg, rgb(245, 73, 73) 0%, #fbdb4d 51%, rgb(245, 73, 73) 100%);
+}
+#User-profile_Section .cancel-btn i {
+  font-size: 1.5rem;
+}
+#User-profile_Section .cancel-btn[disabled] {
+  color: #787878;
+}
+#User-profile_Section .exams-container,
+#User-profile_Section .appointments-container {
+  max-height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#User-profile_Section .exams-container::-webkit-scrollbar-track,
+#User-profile_Section .appointments-container::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+#User-profile_Section .exams-container::-webkit-scrollbar,
+#User-profile_Section .appointments-container::-webkit-scrollbar {
+  width: 5px;
+  background-color: #f5f5f5;
+}
+#User-profile_Section .exams-container::-webkit-scrollbar-thumb,
+#User-profile_Section .appointments-container::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #3368c6;
+}
+@media (max-width: 768px) {
+  #User-profile_Section .user-greeting_user-photo {
+    left: 1rem;
+  }
+  #User-profile_Section .tab-btn {
+    padding: 10px 12px !important;
+  }
+}
+@media (max-width: 576px) {
+  #User-profile_Section .user-greeting_user-photo {
+    left: 1rem;
+    width: 70px;
+    height: 70px;
+  }
+  #User-profile_Section .tab-btn {
+    padding: 10px 12px !important;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+  }
+  #User-profile_Section .tab-buttons {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9;
+  }
+}
+
 body {
   color: #444;
   font-size: 16px;
