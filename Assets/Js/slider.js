@@ -206,7 +206,7 @@ $(document).ready(function () {
 //=================================
 
 $('.departmentsSlider').slick({
-  slidesToShow: 7,
+  slidesToShow: 4,
   slidesToScroll: 1,
   autoplay: false,
   centerMode:true,
@@ -214,6 +214,29 @@ $('.departmentsSlider').slick({
   arrows:false,
   draggabe:true,
   focusOnSelect: true,
+  responsive: [
+     
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 4,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 560,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+
+  
+  ]
 });
 
 

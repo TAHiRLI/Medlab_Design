@@ -10,9 +10,7 @@
    }
 
 .all-doctors{
-    display:  grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    gap: 3rem 3rem;
+
  &_card{
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     &_photo{
@@ -51,19 +49,19 @@
 }
 }
 
-@media (max-width:992px) and (min-width:768px) {
-    #AllDoctors_Section .all-doctors{
-    grid-template-columns: 1fr 1fr ;
-    gap: 1.5rem;
-}
-}
+// @media (max-width:992px) and (min-width:768px) {
+//     #AllDoctors_Section .all-doctors{
+//     grid-template-columns: 1fr 1fr ;
+//     gap: 1.5rem;
+// }
+// }
 
-@media (max-width:767px)  {
-    #AllDoctors_Section .all-doctors{
-   grid-template-columns: 1fr ;
-   gap: 1.5rem;
-}
-}
+// @media (max-width:767px)  {
+//     #AllDoctors_Section .all-doctors{
+//    grid-template-columns: 1fr ;
+//    gap: 1.5rem;
+// }
+// }
 
 
 #Doctor-Details_Section{
