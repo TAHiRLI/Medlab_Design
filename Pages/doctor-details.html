@@ -25,9 +25,9 @@
     <main>
         <!--  Doctor details -->
       <section id="Doctor-Details_Section" class="py-5 ">
-        <div class="container px-5">
+        <div class="container px-lg-5">
           <div class="doctorDetails row">
-            <div class="doctorDetails_photo col-md ">
+            <div class="doctorDetails_photo col-sm ">
               <div class="doctorDetails_photo_image">
                 <img
                   src="/Assets/Uploads/Doctors/doctor-01.jpg"
@@ -57,20 +57,22 @@
               </table>
             </div>
 
-            <div class="doctorDetails_info col-lg-8 mt-4 mt-lg-0">
-              <div class="doctorDetails_info_name row">
-                <div class="col-6">
+            <div class="doctorDetails_info col-lg-8 col-md-9  mt-4 mt-md-0">
+              <div class="doctorDetails_info_name row align-items-baseline justify-content-between">
+                <div class="col-8 col-md-6">
+                  
                   <h1 class="h2">Dr. Frank Bigham</h1>
                   <h3 class="h6 text-base">Associate Dentist</h3>
                 </div>
                 <div
-                  class="col-6 d-flex justify-content-end align-items-center"
+                  class="col-4 col-lg-5 d-flex flex-column justify-content-end align-items-center"
                 >
-                  <button class="set_meeting rounded-pill w-100">
+                  <button class="my-custom-btn py-2 px-2  w-100">
                     <i class="fa-solid fa-video me-2"></i>
-                    Online Appointment
+                    <span class="d-none d-md-inline">    Set Meeting</span>
+                
                   </button>
-                  <div class="links text-nowrap ms-3">
+                  <div class="links text-nowrap ">
                     <a href="#" class="fs-5 mx-2 link-hover-base"
                       ><i class="fa-brands fa-facebook-f"></i
                     ></a>
@@ -146,10 +148,8 @@
       </section>
 
       <!-- Other Doctors -->
-
-      
       <section id="Doctors_Section" class="py-5">
-        <span class="sectionName text-center d-block mb-2">Perfect Team</span>
+        <span class="sectionName text-center d-block mb-4">Perfect Team</span>
         <div class="sectionTitle">
           <h2
             class="h1 position-relative text-center double-title text-dark title_underlined"
