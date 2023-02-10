@@ -11002,7 +11002,6 @@ footer .footerWrap_contact_title::before, footer .footerWrap_blogs_title::before
   font-size: 2.25rem;
   font-weight: 600;
   z-index: 1;
-  line-height: 2.2em;
   color: #444;
 }
 
@@ -11022,6 +11021,16 @@ footer .footerWrap_contact_title::before, footer .footerWrap_blogs_title::before
   top: 50%;
   left: 0%;
   transform: translate(0%, -50%);
+}
+@media (max-width: 992px) {
+  .sectionTitle .double-title::after {
+    font-size: 84px;
+  }
+}
+@media (max-width: 768px) {
+  .sectionTitle .double-title::after {
+    display: none;
+  }
 }
 
 .title_underlined {
@@ -11083,6 +11092,10 @@ footer .footerWrap_contact_title::before, footer .footerWrap_blogs_title::before
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
+}
+
+.bg-base {
+  background-color: #3368c6;
 }
 
 .link-base {
@@ -11348,6 +11361,7 @@ footer .footerWrap_contact_title::before, footer .footerWrap_blogs_title::before
   z-index: 9;
   display: flex;
   justify-content: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
 }
 .navbar_container {
   width: 100%;
@@ -11494,6 +11508,7 @@ footer .footerWrap_contact_title::before, footer .footerWrap_blogs_title::before
   transition: 0.3s;
   top: -20%;
   z-index: 9;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .mobile {
@@ -11552,7 +11567,7 @@ footer .footerWrap_contact_title::before, footer .footerWrap_blogs_title::before
 }
 .mainSlider_item .holder {
   width: 100%;
-  height: 88vh;
+  height: 89vh;
   background-color: red;
 }
 .mainSlider_item .holder img {
@@ -11572,20 +11587,16 @@ footer .footerWrap_contact_title::before, footer .footerWrap_blogs_title::before
   color: white;
 }
 .mainSlider_item_content_desc {
-  line-height: 1em;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: white;
   font-weight: 400;
-  letter-spacing: 0.03rem;
-}
-.mainSlider_item_content .button-87 {
-  margin-top: 65px;
+  letter-spacing: 0.02rem;
 }
 .mainSlider .slick-dots {
   text-align: center;
   list-style: none;
   position: absolute;
-  bottom: 2vh;
+  bottom: 1vh;
   width: 100%;
   margin: 0;
 }
@@ -11616,15 +11627,37 @@ footer .footerWrap_contact_title::before, footer .footerWrap_blogs_title::before
   .mainSlider .holder {
     height: 60vh;
   }
+  .mainSlider_content_title {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+  .mainSlider_content_desc {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.03rem;
+  }
 }
 @media (max-width: 678px) {
   .mainSlider .holder {
     height: 45vh;
   }
+  .mainSlider_item_content_title {
+    font-size: 2.5rem;
+  }
+  .mainSlider_item_content_desc {
+    font-size: 1rem;
+  }
 }
 @media (max-width: 400px) {
   .mainSlider .holder {
-    height: 25vh;
+    height: 30vh;
+  }
+  .mainSlider_item_content_title {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .mainSlider_item_content_desc {
+    font-size: 0.9rem;
   }
 }
 footer .footerWrap {
@@ -11789,10 +11822,8 @@ footer .copyright a:hover {
   background-repeat: no-repeat;
 }
 .aboutUs_values_item {
-  padding: 40px 20px;
   background-color: white;
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
-  margin: 15px;
 }
 .aboutUs_values_item .valueIcon {
   font-size: 55px;
@@ -11823,9 +11854,6 @@ footer .copyright a:hover {
 }
 .aboutUs_values_item:hover .valueName::before {
   background-color: white;
-}
-.aboutUs_info {
-  margin-left: 20px;
 }
 .aboutUs_info_title {
   font-size: 2.2em;
@@ -11861,7 +11889,7 @@ footer .copyright a:hover {
 }
 
 .tests_slider_item {
-  width: 178px;
+  background-color: #f7f9fb;
   margin: 0 10px 10px;
   padding: 20px 17px 25px;
   cursor: pointer;
@@ -11878,7 +11906,7 @@ footer .copyright a:hover {
 }
 .tests_slider_item_icon i {
   transition: 0.3s;
-  font-size: 3.5rem;
+  font-size: 1.5rem;
   color: #3368c6;
 }
 .tests_slider_item_title {
@@ -11895,9 +11923,12 @@ footer .copyright a:hover {
 .tests_content_image_holder {
   width: 100%;
   height: 100%;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center center;
+}
+.tests_content_image_holder img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
 }
 .tests_content_info {
   color: #787878;
@@ -11930,7 +11961,6 @@ footer .copyright a:hover {
 }
 
 .doctor_search {
-  width: 25%;
   margin: auto;
 }
 .doctor_search .form-control {
@@ -11988,15 +12018,25 @@ footer .copyright a:hover {
   position: absolute;
   z-index: -1;
   right: 0;
-  font-size: 120px;
+  font-size: 100px;
   line-height: 1em;
   white-space: nowrap;
   content: attr(data-title);
   color: #f7f9fb;
   z-index: -1;
-  top: 25%;
+  top: -10%;
   left: 0%;
   transform: translate(0%, -50%);
+}
+@media (max-width: 992px) {
+  .appointment_form .sectionTitle .double-title::after {
+    font-size: 70px;
+  }
+}
+@media (max-width: 768px) {
+  .appointment_form .sectionTitle .double-title::after {
+    display: none;
+  }
 }
 .appointment_form form input, .appointment_form form textarea {
   font-size: 0.9rem;
@@ -12016,18 +12056,14 @@ footer .copyright a:hover {
   font-size: 0.9rem;
 }
 
-#Blogs_Seciton, .doctorDetails_info_blogs {
+#Blogs_Section, .doctorDetails_info_blogs {
   background: rgb(248, 250, 248);
   background: linear-gradient(90deg, rgb(248, 250, 248) 0%, rgb(255, 255, 255) 46%, rgba(255, 255, 255, 0.137692577) 47%, rgba(255, 255, 255, 0) 89%);
 }
-#Blogs_Seciton .gridBlogs, .doctorDetails_info_blogs .gridBlogs {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-#Blogs_Seciton .blogs .sectionTitle .double-title, .doctorDetails_info_blogs .blogs .sectionTitle .double-title {
+#Blogs_Section .blogs .sectionTitle .double-title, .doctorDetails_info_blogs .blogs .sectionTitle .double-title {
   color: #f7f9fb;
 }
-#Blogs_Seciton .blogs .sectionTitle .double-title::after, .doctorDetails_info_blogs .blogs .sectionTitle .double-title::after {
+#Blogs_Section .blogs .sectionTitle .double-title::after, .doctorDetails_info_blogs .blogs .sectionTitle .double-title::after {
   position: absolute;
   z-index: -1;
   right: 0;
@@ -12041,57 +12077,59 @@ footer .copyright a:hover {
   left: 0%;
   transform: translate(0%, -50%);
 }
-#Blogs_Seciton .blogs_item_photo, .doctorDetails_info_blogs .blogs_item_photo {
+@media (max-width: 992px) {
+  #Blogs_Section .blogs .sectionTitle .double-title::after, .doctorDetails_info_blogs .blogs .sectionTitle .double-title::after {
+    font-size: 56px;
+  }
+}
+@media (max-width: 768px) {
+  #Blogs_Section .blogs .sectionTitle .double-title::after, .doctorDetails_info_blogs .blogs .sectionTitle .double-title::after {
+    display: none;
+  }
+}
+#Blogs_Section .blogs_item_photo, .doctorDetails_info_blogs .blogs_item_photo {
   width: 140px;
   height: 140px;
 }
-#Blogs_Seciton .blogs_item_photo img, .doctorDetails_info_blogs .blogs_item_photo img {
+#Blogs_Section .blogs_item_photo img, .doctorDetails_info_blogs .blogs_item_photo img {
   width: 100%;
 }
-#Blogs_Seciton .blogs_item_info_date, .doctorDetails_info_blogs .blogs_item_info_date {
+#Blogs_Section .blogs_item_info_date, .doctorDetails_info_blogs .blogs_item_info_date {
   color: #3368c6;
   font-weight: 500;
 }
-#Blogs_Seciton .blogs_item_info_title a, .doctorDetails_info_blogs .blogs_item_info_title a {
+#Blogs_Section .blogs_item_info_title a, .doctorDetails_info_blogs .blogs_item_info_title a {
   font-weight: 600;
   transition: 0.3s;
   color: #444;
 }
-#Blogs_Seciton .blogs_item_info_title a:hover, .doctorDetails_info_blogs .blogs_item_info_title a:hover {
+#Blogs_Section .blogs_item_info_title a:hover, .doctorDetails_info_blogs .blogs_item_info_title a:hover {
   color: #3368c6;
 }
 
-.achievements_photo {
-  background-color: yellow;
-  width: 100%;
-}
-.achievements_photo img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 110%;
-  height: 80%;
-}
-.achievements_counter {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 110%;
-  background-color: #3368c6;
-  color: white;
-}
-.achievements_counter_number {
-  font-size: 2.3rem;
-}
-.achievements_counter_title {
-  font-size: 1.1rem;
+.achievements_counter .counter {
+  font-size: 2rem;
   font-weight: 600;
 }
-.achievements_counter_2 {
-  border-left: 1px solid #f7f9fb;
-  border-right: 1px solid #f7f9fb;
+.achievements_counter sup {
+  font-size: 1.5rem;
+}
+.achievements_counter_title {
+  font-size: 1rem;
 }
 
+@media (max-width: 560px) {
+  .achievements_counter .counter {
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+  .achievements_counter sup {
+    font-size: 1rem;
+  }
+  .achievements_counter_title {
+    font-size: 0.8rem;
+  }
+}
 .values_item i {
   font-size: 5rem;
 }

@@ -34,4 +34,15 @@
     left: $left;
     transform: translate($translateX, $translateY);
   }
+
+  @media (max-width:992px) {
+     &::after{
+      font-size: $fontSize *0.7;
+     } 
+  }
+  @media (max-width:768px) {
+    &::after{
+      display: none;
+    } 
+ }
 }
