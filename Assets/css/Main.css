@@ -11357,6 +11357,12 @@ footer .footerWrap_contact_title::before, footer .footerWrap_blogs_title::before
   font-size: 0.9rem;
 }
 
+.h-min {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
 .navbar {
   z-index: 9;
   display: flex;
