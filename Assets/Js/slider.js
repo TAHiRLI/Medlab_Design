@@ -155,8 +155,8 @@ $(document).ready(function () {
         arrows:true,
         asNavFor: '.galerySliderNav',
         prevArrow:"<button type='button' class='slick-prev slick-button pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-        nextArrow:"<button type='button' class='slick-next slick-button pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
-    
+        nextArrow:"<button type='button' class='slick-next slick-button pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+     
       });
 
 
@@ -177,8 +177,24 @@ $(document).ready(function () {
         focusOnSelect: true,
         arrows:true,
         prevArrow:"<button type='button' class='slick-prev slick-button pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-        nextArrow:"<button type='button' class='slick-next slick-button pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
-    
+        nextArrow:"<button type='button' class='slick-next slick-button pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+        responsive: [
+     
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 3,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+            }
+          }
+      
+        
+        ]
     });
 
 

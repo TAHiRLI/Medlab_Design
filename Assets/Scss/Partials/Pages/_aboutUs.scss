@@ -44,14 +44,12 @@
 //==========================
 
 #OurOffice_Section {
-
-    .title_underlined::before{
-        bottom: 0;
-        left: 0;
-    }
+  .title_underlined::before {
+    left: 0;
+  }
   .galeryNav {
-    &_img{
-        cursor: pointer;
+    &_img {
+      cursor: pointer;
     }
     .slick-prev,
     .slick-next {
@@ -70,7 +68,7 @@
     }
   }
 
-  .galery{
+  .galery {
     .slick-prev,
     .slick-next {
       position: absolute;
@@ -90,22 +88,31 @@
     }
   }
 
-
   .slick-prev {
-      border-radius:0  10px 10px 0 ;
-      left: 0;
+    border-radius: 0 10px 10px 0;
+    left: 0;
   }
 
   .slick-next {
-      border-radius: 10px 0 0 10px;
-      right: 0;
+    border-radius: 10px 0 0 10px;
+    right: 0;
   }
-  .slick-button{
-    background-color: rgb(177, 177, 177);
+  .slick-button {
+    background-color: rgb(243, 243, 243);
 
-    &:hover{
-        background-color: $baseColor;
-        color: white;
+    &:hover {
+      background-color: $baseColor;
+      color: white;
     }
+  }
 }
+
+
+@media (max-width:768px) {
+  .promo_content_desc{
+    letter-spacing: 1px;
+  }
+  .promo_content_title{
+    font-size: 2rem;
+  }
 }

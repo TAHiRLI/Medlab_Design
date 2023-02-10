@@ -12152,7 +12152,6 @@ footer .copyright a:hover {
 }
 
 #OurOffice_Section .title_underlined::before {
-  bottom: 0;
   left: 0;
 }
 #OurOffice_Section .galeryNav_img {
@@ -12199,13 +12198,21 @@ footer .copyright a:hover {
   right: 0;
 }
 #OurOffice_Section .slick-button {
-  background-color: rgb(177, 177, 177);
+  background-color: rgb(243, 243, 243);
 }
 #OurOffice_Section .slick-button:hover {
   background-color: #3368c6;
   color: white;
 }
 
+@media (max-width: 768px) {
+  .promo_content_desc {
+    letter-spacing: 1px;
+  }
+  .promo_content_title {
+    font-size: 2rem;
+  }
+}
 #Our_Services_Section .services {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
