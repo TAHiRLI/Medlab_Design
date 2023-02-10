@@ -11340,6 +11340,10 @@ footer .footerWrap_contact_title::before, footer .footerWrap_blogs_title::before
   left: 0;
 }
 
+.fs-09 {
+  font-size: 0.9rem;
+}
+
 .navbar {
   z-index: 9;
   display: flex;
