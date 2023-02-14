@@ -36,23 +36,22 @@
   }
 
   &_products_cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 3rem 2rem;
-
+ 
     .product {
+      background-color: rgb(245, 245, 245);
       transition: 0.5s;
       border: 1px solid #f0f0f0;
       &:hover{
         box-shadow: 0 0 25px rgb(0 0 0 / 10%);
       }
       &-img{
-        height: 45vh;
+        // height: 45vh;
         border-bottom:1px solid #f0f0f0;
         img{
           height: 100%;
+          width: 100%;
         }
-        object-fit: cover;
+        object-fit: contain;
 
       }
       &-stars {
