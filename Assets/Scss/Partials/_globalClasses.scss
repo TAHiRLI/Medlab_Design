@@ -407,3 +407,32 @@
     background-color: $baseColor;
   }
 }
+
+// pagination
+
+.pagination{
+  li{
+    border: 2px solid $baseColor;
+    background-color: white;
+    margin: 0px .5rem;
+    border-radius: 50%;
+       width: 40px;
+      height: 40px;
+    
+    a, span{
+      display: block;
+      width: 100%;
+      line-height: 40px;
+      text-align: center;
+      font-size: 1.1rem;
+      text-decoration: none;
+      color:$baseColor;
+    }
+    &.active{
+      background-color: $baseColor;
+      a, span{
+        color: white !important;
+      }
+    }
+  }
+}

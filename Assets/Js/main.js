@@ -12,3 +12,7 @@ $(".decrement").on("click", ()=>{
 })
 
 
+let arr = [1,23,45,4]
+arr.forEach(item=>{
+    console.log(item)
+})

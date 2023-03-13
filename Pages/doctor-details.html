@@ -2,10 +2,15 @@
 <html lang="en">
   <head>
     <link
-    rel="stylesheet"
-    type="text/css"
-    href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-  />
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,11 +28,11 @@
     </div>
 
     <main>
-        <!--  Doctor details -->
-      <section id="Doctor-Details_Section" class="py-5 ">
+      <!--  Doctor details -->
+      <section id="Doctor-Details_Section" class="py-5">
         <div class="container px-lg-5">
           <div class="doctorDetails row">
-            <div class="doctorDetails_photo col-sm ">
+            <div class="doctorDetails_photo col-sm">
               <div class="doctorDetails_photo_image">
                 <img
                   src="/Assets/Uploads/Doctors/doctor-01.jpg"
@@ -35,19 +40,19 @@
                   class="w-100"
                 />
               </div>
-              <table class="doctorDetails_photo_info mt-5 ">
+              <table class="doctorDetails_photo_info mt-5">
                 <tbody>
-                  <tr >
+                  <tr>
                     <td class="py-3">Speciality</td>
                     <td class="py-3">Dentist</td>
                   </tr>
-                  <tr >
+                  <tr>
                     <td class="py-3">Office</td>
                     <td class="py-3">12 General Office</td>
                   </tr>
-                  <tr >
+                  <tr>
                     <td class="py-3">Meeting Price</td>
-                    <td class="py-3"> $2 / 10 min </td>
+                    <td class="py-3">$2 / 10 min</td>
                   </tr>
                   <tr class="py-1">
                     <td class="py-3">Gender</td>
@@ -57,22 +62,26 @@
               </table>
             </div>
 
-            <div class="doctorDetails_info col-lg-8 col-md-9  mt-4 mt-md-0">
-              <div class="doctorDetails_info_name row align-items-baseline justify-content-between">
+            <div class="doctorDetails_info col-lg-8 col-md-9 mt-4 mt-md-0">
+              <div
+                class="doctorDetails_info_name row align-items-baseline justify-content-between"
+              >
                 <div class="col-8 col-md-6">
-                  
                   <h1 class="h2">Dr. Frank Bigham</h1>
                   <h3 class="h6 text-base">Associate Dentist</h3>
                 </div>
                 <div
                   class="col-4 col-lg-5 d-flex flex-column justify-content-end align-items-center"
                 >
-                  <button class="my-custom-btn py-2 px-2  w-100">
+                  <button
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    class="my-custom-btn py-2 px-2 w-100"
+                  >
                     <i class="fa-solid fa-video me-2"></i>
-                    <span class="d-none d-md-inline">    Set Meeting</span>
-                
+                    <span class="d-none d-md-inline"> Set Meeting</span>
                   </button>
-                  <div class="links text-nowrap ">
+                  <div class="links text-nowrap">
                     <a href="#" class="fs-5 mx-2 link-hover-base"
                       ><i class="fa-brands fa-facebook-f"></i
                     ></a>
@@ -96,7 +105,7 @@
                   and also speaks French and some Italian. His interests include
                   sports and history.
                   <br />
-                  <br>
+                  <br />
                   When asked what makes dentistry so rewarding, he said "My job
                   is rewarding because sometimes even the simplest treatment can
                   change the patient's confidence in himself/herself and I feel
@@ -107,40 +116,39 @@
               <div class="doctorDetails_info_blogs mt-4">
                 <h3 class="text-base my-3">Latest Blogs</h3>
                 <ul class="">
-                 
-                    <!-- blog -->
-                    <li class="blogs_item my-2 row">
-                      <div class="blogs_item_photo">
-                        <img src="/Assets/Uploads/Doctors/doctor-02.jpg" alt="" />
-                      </div>
-                      <div class="blogs_item col pe-5">
-                        <span class="blogs_item_info_date">Mar 12 2020</span>
-                        <p class="blogs_item_info_title">
-                          <a href="" class="text-decoration-none"
-                            >Biochemical Receptor Reverses Bone Degradation Caused by
-                            Osteoporosis</a
-                          >
-                        </p>
-                      </div>
-                    </li>
-                    <!-- blog -->
-                    <li class="blogs_item my-2 row">
-                      <div class="blogs_item_photo">
-                        <img src="/Assets/Uploads/Doctors/doctor-02.jpg" alt="" />
-                      </div>
-                      <div class="blogs_item col pe-5">
-                        <span class="blogs_item_info_date">Mar 12 2020</span>
-                        <p class="blogs_item_info_title">
-                          <a href="" class="text-decoration-none"
-                            >Biochemical Receptor Reverses Bone Degradation Caused by
-                            Osteoporosis</a
-                          >
-                        </p>
-                      </div>
-                    </li>
-      
-                    <!-- END -->
-                  </ul>
+                  <!-- blog -->
+                  <li class="blogs_item my-2 row">
+                    <div class="blogs_item_photo">
+                      <img src="/Assets/Uploads/Doctors/doctor-02.jpg" alt="" />
+                    </div>
+                    <div class="blogs_item col pe-5">
+                      <span class="blogs_item_info_date">Mar 12 2020</span>
+                      <p class="blogs_item_info_title">
+                        <a href="" class="text-decoration-none"
+                          >Biochemical Receptor Reverses Bone Degradation Caused
+                          by Osteoporosis</a
+                        >
+                      </p>
+                    </div>
+                  </li>
+                  <!-- blog -->
+                  <li class="blogs_item my-2 row">
+                    <div class="blogs_item_photo">
+                      <img src="/Assets/Uploads/Doctors/doctor-02.jpg" alt="" />
+                    </div>
+                    <div class="blogs_item col pe-5">
+                      <span class="blogs_item_info_date">Mar 12 2020</span>
+                      <p class="blogs_item_info_title">
+                        <a href="" class="text-decoration-none"
+                          >Biochemical Receptor Reverses Bone Degradation Caused
+                          by Osteoporosis</a
+                        >
+                      </p>
+                    </div>
+                  </li>
+
+                  <!-- END -->
+                </ul>
               </div>
             </div>
           </div>
@@ -310,13 +318,79 @@
         </div>
       </section>
 
+      <div class="">
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  Modal title
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="">
+                  <div class="my-2">
+                    <label>Fullname</label>
+                    <input type="text" class="form-control"  />
+                  </div>
+                  <div class="my-2">
+                    <label>Phone</label>
+                    <input type="text" class="form-control"  />
+                  </div>
+                  <div class="my-2">
+                    <label>Date</label>
+                    <input type="date" class="form-control" />
+                  </div>
+                  <div class="my-2">
+                    <label >Time</label>
+                    <select  class="form-control" name="time">
+                      <option  value="AL">Alabama</option>
+                      <option value="WY">Wyoming</option>
+                      <option value="WY">Wyoming</option>
+                      <option value="WY">Wyoming</option>
+                      <option value="WY">Wyoming</option>
+                      <option value="WY">Wyoming</option>
+                      <option value="WY">Wyoming</option>
+                    </select>
+                  </div>
+
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger py-1"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-success py-1">
+                  Save changes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- Content End -->
 
     <!-- ========================= CDNs =============================== -->
 
-    
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- Slick Slide -->
@@ -331,8 +405,18 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Bootstrap -->
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map"></script>
+
+    <!-- Select2 -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
     <!-- ========================= Custom =============================== -->
-        <!-- Slick Settings -->
-        <script type="module" src="/Assets/Js/slider.js"></script>
+    <!-- Slick Settings -->
+    <script type="module" src="/Assets/Js/slider.js"></script>
+
+    <!-- Calendar Setting -->
+    <script src="/Assets/Js/selectBox.js"></script>
   </body>
 </html>

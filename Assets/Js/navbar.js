@@ -18,10 +18,14 @@ let searchButtons = document.getElementsByClassName("fa-search");
 for (const searchButton of searchButtons) {
 
    searchButton.addEventListener("click", (e)=>{
-    var searchBox = e.target.parentElement;
-    var input = e.target.previousElementSibling;
+       let resultBox = document.querySelector(".search-result");
+    let searchBox = e.target.parentElement;
+    let input = e.target.previousElementSibling;
     if(!input.value?.length > 0)
     searchBox.classList.toggle("active")
+    else{
+        resultBox.classList.toggle("active")
+    }
 })
 
 }

@@ -4,3 +4,10 @@ $(document).ready(function() {
 
     });
   });
+
+$(document).ready(function() {
+    $('.doctor_time').select2({
+        minimumResultsForSearch: -1
+
+    });
+  });
